@@ -13,8 +13,8 @@ module.exports = function (grunt) {
             sass: {
                 dist: {
                     options:{
-                        sourcemap: 'auto',
-                        style: 'compact',
+                        sourcemap: 'true',
+                        style: 'expanded',
                         update: true
                     },
                     files: [{
@@ -26,13 +26,19 @@ module.exports = function (grunt) {
                     }]                            
 
                 }
+            },
+            watch: {
+                css: {
+                    files: '**/*.scss',
+                    tasks: ['sass']
+                }
             }
-
     });
 
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-babel');
 
     grunt.registerTask('default', ['sass']);

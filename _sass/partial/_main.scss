@@ -1,0 +1,40 @@
+.main{
+	
+	&__swipper{
+		width: 100%;
+		display: block;
+
+		&-wrapper{
+			position:relative;
+		}
+
+		&-btn{
+			position:absolute;
+			top:45%;
+		    font-size: 3.4rem;
+		    color: #fff;
+		    cursor: pointer;
+		    opacity: .5;
+
+		    &:hover{
+		    	opacity: .8;
+		    }
+			
+
+			&--left{
+				left:2%;
+			}
+
+			&--right{
+				right:2%;
+			}
+
+		}
+	}
+
+	&__img-slide{
+		width: 100%;
+	}
+
+
+}

@@ -9,10 +9,105 @@
         <meta name="keywords" content="mazipan, mazipanneh, irfanmaulana, irfan, front end"/>            
         <meta name="description" content="Irfan Maulana | Front End Developer" />
 
-		<link rel="stylesheet" href="./css/style.css"> 
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+		<link rel="stylesheet" type="text/css" href="./css/style.css"> 
+
 
 </head>
-<body>
-  <h3> {Hello World} </h3>
+<body class="site">
+
+  <header role="header" class="site__header header">
+  		<div class="header__wrapper">
+  			<div class="header__brand">
+  				<img src="./images/brand.png" alt="Irfan Maulana" title="Irfan Maulana"/>
+  			</div>
+  			<div class="header__nav">
+  				<ul>
+  					<li><a href="#home">Home</a></li>
+  					<li><a href="#about">About</a></li>
+  					<li><a href="#portofolio">Portofolio</a></li>
+  					<li><a href="#skills">Skills</a></li>
+  				</ul>
+  			</div>
+  		</div>
+  </header>
+
+  <main role="main" class="site__main main">
+  		<div class="main__swipper">
+
+        <div class="main__swipper-wrapper">
+
+          <img class="main__img-slide" src="./images/slide-1.jpg" style="width:100%">
+          <img class="main__img-slide" src="./images/slide-2.jpg" style="width:100%">
+          <img class="main__img-slide" src="./images/slide-3.jpeg" style="width:100%">
+
+          <a class="main__swipper-btn main__swipper-btn--left" 
+              onclick="plusDivs(-1)">
+
+            <i class="fa fa-chevron-circle-left"></i>
+          </a>
+
+          <a class="main__swipper-btn main__swipper-btn--right" 
+              onclick="plusDivs(1)">
+
+            <i class="fa fa-chevron-circle-right"></i>
+          </a>
+
+        </div>
+
+
+      </div>
+  </main>
+
+  <footer role="footer" class="site__footer footer">
+  	<div class="footer__wrapper">
+
+  		<div class="footer__text">
+  			<span>Crafted with <i class="fa fa-heart-o"></i> by Irfan Maulana</span>
+  		</div>
+
+  		<ul class="footer__list">
+  			<li class="footer__icon footer__icon--facebook">
+  				<a rel="nofollow" href="https://www.facebook.com/mazipanneh">
+  					<i class="fa fa-facebook-official"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon footer__icon--twitter">
+  				<a rel="nofollow" href="https://twitter.com/Maz_Ipan">
+  					<i class="fa fa-twitter"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon footer__icon--instagram">
+  				<a rel="nofollow" href="https://instagram.com/maz_ipan">
+  					<i class="fa fa-instagram"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon footer__icon--linkedin">
+  				<a rel="nofollow" href="https://id.linkedin.com/in/irfanmaulanamazipan">
+  					<i class="fa fa-linkedin"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon footer__icon--slideshare">
+  				<a rel="nofollow" href="https://www.slideshare.net/IrfanMaulana21">
+  					<i class="fa fa-slideshare"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon footer__icon--github">
+  				<a rel="nofollow" href="https://github.com/mazipan">
+  					<i class="fa fa-github"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon footer__icon--wordpress">
+  				<a rel="nofollow" href="https://mazipanneh.wordpress.com/">
+  					<i class="fa fa-wordpress"></i>
+  				</a>
+  			</li>
+  		</ul>
+  	</div>
+  </footer>
+
+  <script src="https://use.fontawesome.com/89344806bd.js"></script>
+  <script src="./js/swiper.js"></script>
+
 </body>
 </html>

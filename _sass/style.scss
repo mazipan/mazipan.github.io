@@ -1,4 +1,9 @@
+
 .site {
+	margin: 0;
+	font-family: 'Roboto Condensed', serif;
+	font-size: 1.4rem;
+
 	&__header {}
 	&__main {
 		margin-top: 60px;
@@ -8,3 +13,7 @@
 	&__footer {}
 	
 }
+
+@import "partial/header";
+@import "partial/main";
+@import "partial/footer";
