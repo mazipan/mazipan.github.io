@@ -1,0 +1,16 @@
+
+%clearfix,
+%row { 
+	@include clearfix(); 
+	margin: 0 auto;
+    max-width: 92.308em;
+}
+
+// grid like Foundation
+$columnCount : 16 !default;
+@for $i from 1 through $columnCount {
+	%col-#{$i}{
+		float: left; 
+		width: ((100/$columnCount) * $i) *1%;
+	}
+}

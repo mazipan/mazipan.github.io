@@ -1,0 +1,21 @@
+
+// Colors
+$white 			: #ffffff !default;
+$black 			: #333333 !default;
+$grey 			: #B6B6B6 !default;
+$red			: #ed1c24 !default;
+$green			: #00b25a !default;
+$blue			: #0095da !default;
+$yellow			: #ff9700 !default;
+$orange			: #f7931e !default;
+$brown 			: #6A453C !default;
+
+$blackDark 		: darken($black,10%) !default;
+$blackDarker    : darken($black,20%) !default;
+$blackLight     : lighten($black,10%) !default;
+$blackLighter   : lighten($black,20%) !default;
+
+$greyDark 		: darken($grey,10%) !default;
+$greyDarker     : darken($grey,20%) !default;
+$greyLight 		: lighten($grey,10%) !default;
+$greyLighter    : lighten($grey,20%) !default;

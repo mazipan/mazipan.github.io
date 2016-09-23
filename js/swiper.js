@@ -6,7 +6,7 @@ function plusDivs(n) {
 }
 
 function showDivs(n) {
-  var i, x = document.getElementsByClassName("main__img-slide");
+  var i, x = document.getElementsByClassName("swipper__img");
 
   if (n > x.length) slideIndex = 1;
 

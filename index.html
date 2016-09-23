@@ -33,27 +33,69 @@
   </header>
 
   <main role="main" class="site__main main">
-  		<div class="main__swipper">
+  		<div class="main__swipper swipper">
 
-        <div class="main__swipper-wrapper">
+        <section class="swipper__wrapper">
 
-          <img class="main__img-slide" src="./images/slide-1.jpg" style="width:100%">
-          <img class="main__img-slide" src="./images/slide-2.jpg" style="width:100%">
-          <img class="main__img-slide" src="./images/slide-3.jpeg" style="width:100%">
+          <img class="swipper__img" src="./images/slide-1.jpg" />
+          <img class="swipper__img" src="./images/slide-2.jpg" />
+          <img class="swipper__img" src="./images/slide-3.jpeg" />
 
-          <a class="main__swipper-btn main__swipper-btn--left" 
+          <a class="swipper__btn swipper__btn--left" 
               onclick="plusDivs(-1)">
 
             <i class="fa fa-chevron-circle-left"></i>
           </a>
 
-          <a class="main__swipper-btn main__swipper-btn--right" 
+          <a class="swipper__btn swipper__btn--right" 
               onclick="plusDivs(1)">
 
             <i class="fa fa-chevron-circle-right"></i>
           </a>
 
-        </div>
+        </section>
+
+        <section class="main__about about">
+          <div class="about__wrapper">
+            <div class="about__title">
+              <span>About</span>
+              <span class="about__title-border"></span>
+            </div>
+            <div class="about__content">
+
+              <i class="about__quote about__quote--left fa fa-quote-left "></i>
+
+              <span>Software Developer | Blogger | Family Man</span>
+
+              <i class="about__quote about__quote--right fa fa-quote-right"></i>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="main__portofolio portofolio">
+          <div class="portofolio__wrapper">
+            <div class="portofolio__title">
+              <span>Portofolio</span>
+              <span class="portofolio__title-border"></span>
+            </div>
+            <div class="portofolio__content">
+
+            </div>
+          </div>
+        </section>
+
+        <section class="main__skills skills">
+          <div class="skills__wrapper">
+            <div class="skills__title">
+              <span>Skills</span>
+              <span class="skills__title-border"></span>
+            </div>
+            <div class="skills__content">
+              
+            </div>
+          </div>
+        </section>
 
 
       </div>

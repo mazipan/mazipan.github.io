@@ -1,4 +1,8 @@
 
+@import "helper/vars";
+@import "helper/mixins";
+@import "helper/grid";
+
 .site {
 	margin: 0;
 	font-family: 'Roboto Condensed', serif;
@@ -7,8 +11,6 @@
 	&__header {}
 	&__main {
 		margin-top: 60px;
-		padding-top: 30px;
-		margin-bottom: 30px;
 	}
 	&__footer {}
 	
@@ -16,4 +18,8 @@
 
 @import "partial/header";
 @import "partial/main";
+@import "partial/swipper";
+@import "partial/about";
+@import "partial/portofolio";
+@import "partial/skills";
 @import "partial/footer";
