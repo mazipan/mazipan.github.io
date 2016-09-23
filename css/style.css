@@ -62,7 +62,7 @@
             font-weight: bold; }
 
 .main__swipper {
-  width: 100%;
+  overflow: hidden;
   display: block;
   *zoom: 1; }
   .main__swipper:before, .main__swipper:after {
@@ -88,6 +88,13 @@
 
 .swipper__img {
   width: 100%; }
+  .swipper__img--show {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight; }
 
 .swipper__btn {
   position: absolute;
@@ -102,6 +109,24 @@
     left: 2%; }
   .swipper__btn--right {
     right: 2%; }
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
 
 .about__wrapper {
   text-align: center; }

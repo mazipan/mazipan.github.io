@@ -1,7 +1,7 @@
 .main{
 	
 	&__swipper{
-		width: 100%;
+		overflow: hidden;
 		display: block;
 		@include clearfix(); 
 	}
