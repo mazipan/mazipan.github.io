@@ -28,11 +28,12 @@
 		}
 	}
 
+	$progress: 200;
 	&__item{
 		@include clearfix();
 		display : inline-block;
     	width: 40%;
-    	min-width: 300px;
+    	min-width: #{$progress+100}px;
     	padding: 5px;
 
 		&-title{
@@ -46,67 +47,32 @@
 		}
 
 
-		$progress: 200;
+		
 		&-progress{
 			display: inline-block;
 		    vertical-align: middle;
 			position: relative;
+		    background-color: $greyLight;
 		    width: #{$progress}px;
-		    height: 12px;
+		    height: 1em;
+		    z-index: 1;
 
-		    &--empty {
+		    &-fill {
 		        width: #{$progress}px;
-		        height: 12px;
-		        background-color: $greyLight;
+		        background-color: $blackLight;
 		        position: absolute;
 		        left: 0;
 		        top: 0;
-		        z-index: 1;
-		    }
-
-		    &--full {
-		        width: #{$progress}px;
-		        height: 12px;
-		        background-color: $black;
-		        position: absolute;
-		        left: 0;
-		        top: 0;
+		        height: 1em;
 		        z-index: 2;
 		    }
 
-
-		    &--js{
-		    	width: #{$progress* 80/100}px;
-		    }
-		    &--angular{
-		    	width: #{$progress* 70/100}px;
-		    }
-		    &--html{
-		    	width: #{$progress* 90/100}px;
-		    }
-		    &--css{
-		    	width: #{$progress* 70/100}px;
-		    }
-		    &--sass{
-		    	width: #{$progress* 80/100}px;
+		    &-value{
+		    	text-align: center;
+		    	color: #fff;
+		    	font-size: 1.1rem;
 		    }
 
-
-		    &--java{
-		    	width: #{$progress* 70/100}px;
-		    }
-		    &--node{
-		    	width: #{$progress* 60/100}px;
-		    }
-		    &--php{
-		    	width: #{$progress* 50/100}px;
-		    }
-		    &--mysql{
-		    	width: #{$progress* 60/100}px;
-		    }
-		    &--mongo{
-		    	width: #{$progress* 40/100}px;
-		    }
 		}
 	    
 	}

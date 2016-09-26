@@ -44,6 +44,29 @@
     transform: rotate($degrees);
 } 
 
+// Transitions
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
+// Transition Delay
+@mixin transition-delay($transition-delay) {
+    -webkit-transition-delay: $transition-delay;
+    transition-delay: $transition-delay;
+}
+
+// Transitions : transform
+@mixin transition-transform($transition...) {
+    -webkit-transition: -webkit-transform $transition;
+    -moz-transition: -moz-transform $transition;
+    -o-transition: -o-transform $transition;
+    transition: transform $transition;
+}
+
 // Drop Shadow
 @mixin box-shadow($shadow...) {
     -webkit-box-shadow: $shadow; 
@@ -77,28 +100,6 @@
     ::-webkit-input-placeholder  { padding: $padding; } 
 }
 
-// Transitions
-@mixin transition($transition...) {
-    -webkit-transition: $transition;
-    -o-transition: $transition;
-    -moz-transition: $transition;
-    -ms-transition: $transition;
-    transition: $transition;
-}
-
-// Transition Delay
-@mixin transition-delay($transition-delay) {
-    -webkit-transition-delay: $transition-delay;
-    transition-delay: $transition-delay;
-}
-
-// Transitions : transform
-@mixin transition-transform($transition...) {
-    -webkit-transition: -webkit-transform $transition;
-    -moz-transition: -moz-transform $transition;
-    -o-transition: -o-transform $transition;
-    transition: transform $transition;
-}
 
 // Border Radius
 @mixin border-radius($radius){

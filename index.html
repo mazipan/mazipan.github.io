@@ -48,9 +48,12 @@
   				</ul>
 
           <div class="header__nav--mobile">
-            <button class="header__nav-btn" id="menu-toggle">
-              Toggle Menu
-            </button>
+            <div class="header__nav-btn" id="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>  
 
   			</nav>
@@ -58,7 +61,8 @@
   		</div>
   </header>
 
-  <div class="site__offcanvas offcanvas">
+  <div class="site__offcanvas offcanvas offcanvas--animated">
+    <div class="offcanvas__overlay"></div>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -308,9 +312,8 @@
                   </div>
 
                   <div class="skills__item-progress">
-                    <div class="skills__item-progress--empty">
-                    </div>
-                    <div class="skills__item-progress--full skills__item-progress--js">
+                    <div class="skills__item-progress-fill" data-value="80">
+                      <div class="skills__item-progress-value"></div>
                     </div>
                   </div>
                 </div>    
@@ -322,9 +325,8 @@
                   </div>
 
                   <div class="skills__item-progress">
-                    <div class="skills__item-progress--empty">
-                    </div>
-                    <div class="skills__item-progress--full skills__item-progress--angular">
+                    <div class="skills__item-progress-fill" data-value="80">
+                      <div class="skills__item-progress-value"></div>
                     </div>
                   </div>
                 </div>    
@@ -336,9 +338,8 @@
                   </div>
 
                   <div class="skills__item-progress">
-                    <div class="skills__item-progress--empty">
-                    </div>
-                    <div class="skills__item-progress--full skills__item-progress--html">
+                    <div class="skills__item-progress-fill" data-value="90">
+                      <div class="skills__item-progress-value"></div>
                     </div>
                   </div>
                 </div> 
@@ -350,9 +351,8 @@
                   </div>
 
                   <div class="skills__item-progress">
-                    <div class="skills__item-progress--empty">
-                    </div>
-                    <div class="skills__item-progress--full skills__item-progress--css">
+                    <div class="skills__item-progress-fill" data-value="70">
+                      <div class="skills__item-progress-value"></div>
                     </div>
                   </div>
                 </div>  
@@ -364,9 +364,8 @@
                   </div>
 
                   <div class="skills__item-progress">
-                    <div class="skills__item-progress--empty">
-                    </div>
-                    <div class="skills__item-progress--full skills__item-progress--sass">
+                    <div class="skills__item-progress-fill" data-value="80">
+                      <div class="skills__item-progress-value"></div>
                     </div>
                   </div>
                 </div>  
@@ -379,9 +378,8 @@
                   </div>
 
                   <div class="skills__item-progress">
-                    <div class="skills__item-progress--empty">
-                    </div>
-                    <div class="skills__item-progress--full skills__item-progress--java">
+                    <div class="skills__item-progress-fill" data-value="70">
+                      <div class="skills__item-progress-value"></div>
                     </div>
                   </div>
                 </div> 
@@ -393,9 +391,8 @@
                   </div>
 
                   <div class="skills__item-progress">
-                    <div class="skills__item-progress--empty">
-                    </div>
-                    <div class="skills__item-progress--full skills__item-progress--node">
+                    <div class="skills__item-progress-fill" data-value="60">
+                      <div class="skills__item-progress-value"></div>
                     </div>
                   </div>
                 </div> 
@@ -407,9 +404,8 @@
                   </div>
 
                   <div class="skills__item-progress">
-                    <div class="skills__item-progress--empty">
-                    </div>
-                    <div class="skills__item-progress--full skills__item-progress--php">
+                    <div class="skills__item-progress-fill" data-value="50">
+                      <div class="skills__item-progress-value"></div>
                     </div>
                   </div>
                 </div> 
@@ -421,9 +417,8 @@
                   </div>
 
                   <div class="skills__item-progress">
-                    <div class="skills__item-progress--empty">
-                    </div>
-                    <div class="skills__item-progress--full skills__item-progress--mysql">
+                    <div class="skills__item-progress-fill" data-value="60">
+                      <div class="skills__item-progress-value"></div>
                     </div>
                   </div>
                 </div> 
@@ -435,9 +430,8 @@
                   </div>
 
                   <div class="skills__item-progress">
-                    <div class="skills__item-progress--empty">
-                    </div>
-                    <div class="skills__item-progress--full skills__item-progress--mongo">
+                    <div class="skills__item-progress-fill" data-value="40">
+                      <div class="skills__item-progress-value"></div>
                     </div>
                   </div>
                 </div>          
@@ -501,11 +495,13 @@
 
   <script src="./js/jquery.js"></script>
   <script src="./js/jquery.isotope.min.js"></script>
+  <script src="./js/jquery.inview.min.js"></script>
   <script src="./js/responsiveslides.min.js"></script>
   <!-- <script src="https://use.fontawesome.com/89344806bd.js"></script> -->
   <script src="./js/offcanvas.js"></script>
   <script src="./js/swiper.js"></script>
   <script src="./js/portofolio.js"></script>
+  <script src="./js/skills.js"></script>
 
 </body>
 </html>
