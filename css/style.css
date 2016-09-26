@@ -73,7 +73,15 @@
       font-size: 1.2em;
       color: transparent;
       background: transparent;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
       .header__nav-btn:before {
         position: absolute;
         top: 0.5em;
@@ -157,55 +165,46 @@
   padding: 20px 0;
   display: block; }
 
-.swipper__wrapper {
+.swipper {
   position: relative; }
-
-.swipper__img {
-  width: 100%;
-  display: none; }
-  .swipper__img--show {
-    display: block;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: slideInRight;
-    animation-name: slideInRight; }
-
-.swipper__btn {
-  position: absolute;
-  top: 45%;
-  font-size: 3.4rem;
-  color: #fff;
-  cursor: pointer;
-  opacity: .5; }
-  .swipper__btn:hover {
-    opacity: .8; }
-  .swipper__btn--left {
-    left: 2%; }
-  .swipper__btn--right {
-    right: 2%; }
-  @media screen and (max-width: 640px) {
-    .swipper__btn {
-      display: none; } }
-
-@-webkit-keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible; }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-
-@keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible; }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  .swipper .next, .swipper .prev {
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    z-index: 10;
+    background-color: rgba(28, 27, 27, 0.5);
+    color: #fff;
+    padding: 20px; }
+    .swipper .next i, .swipper .prev i {
+      font-size: 2.4rem; }
+  .swipper .next {
+    right: 0; }
+  .swipper .prev {
+    left: 0; }
+  .swipper__slide {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+    .swipper__slide li {
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      display: none;
+      width: 100%;
+      left: 0;
+      top: 0; }
+      .swipper__slide li:first-child {
+        position: relative;
+        display: block;
+        float: left; }
+    .swipper__slide img {
+      display: block;
+      height: auto;
+      float: left;
+      width: 100%;
+      border: 0; }
 
 .about__wrapper {
   text-align: center; }

@@ -1,77 +1,61 @@
 .swipper{
+	position: relative;
 
-		&__wrapper{
-			position:relative;
-		}
+	.next , .prev {
+        display: inline-block;
+        position: absolute;
+        top: 30%;
+        z-index: 10;
+        background-color: rgba(28, 27, 27, 0.5);
+        color: #fff;
+        padding: 20px;
+        
+        i{
+            font-size: 2.4rem;
+        }
 
-		&__img{
-			width: 100%;
-			display: none;
+    }
+        
+    .next {
+        right: 0;
+    }
+    
+    .prev {
+        left: 0;
+    }
 
-			&--show{
-			  display: block;
+	&__slide{
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;    
 
+        li {
+            -webkit-backface-visibility: hidden;
+            position: absolute;
+            display: none;
+            width: 100%;
+            left: 0;
+            top: 0;
 
-			  -webkit-animation-duration: .5s;
-			  animation-duration: .5s;
-			  -webkit-animation-fill-mode: both;
-			  animation-fill-mode: both;
+            &:first-child {
+                position: relative;
+                display: block;
+                float: left;
+            }
+        }
 
-			  -webkit-animation-name: slideInRight;
-			  animation-name: slideInRight;
-			}
-
-		}
-
-		&__btn{
-			position:absolute;
-			top:45%;
-		    font-size: 3.4rem;
-		    color: #fff;
-		    cursor: pointer;
-		    opacity: .5;
-
-		    &:hover{
-		    	opacity: .8;
-		    }
-			
-
-			&--left{
-				left:2%;
-			}
-
-			&--right{
-				right:2%;
-			}
-
-			@media screen and (max-width:640px) {
-				display: none;
-			}
-
-		}
-	}
-
-
-@-webkit-keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+        img {
+            display: block;
+            height: auto;
+            float: left;
+            width: 100%;
+            border: 0;
+        }
+    }
+	
 }
 
-@keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
+

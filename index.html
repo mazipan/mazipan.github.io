@@ -68,25 +68,21 @@
   </div> 
 
   <main role="main" class="site__main main">
-  		<div class="main__swipper swipper">
+  		<div class="main__wrapper">
 
-        <section class="swipper__wrapper" id="home">
+        <section class="main__swipper swipper" id="home">
 
-          <img class="swipper__img swipper__img--show" src="./images/slide-1.JPG" />
-          <img class="swipper__img" src="./images/slide-2.JPG" />
-          <img class="swipper__img" src="./images/slide-3.jpg" />
-
-          <a class="swipper__btn swipper__btn--left" 
-              onclick="doSlide(-1)">
-
-            <i class="fa fa-chevron-circle-left"></i>
-          </a>
-
-          <a class="swipper__btn swipper__btn--right" 
-              onclick="doSlide(1)">
-
-            <i class="fa fa-chevron-circle-right"></i>
-          </a>
+          <ul id="swipper__slide" class="swipper__slide">
+              <li>
+                <img class="sp-image" src="./images/slide-1.JPG" />
+              </li>
+              <li>
+                <img class="sp-image" src="./images/slide-2.JPG" />
+              </li>
+              <li>
+                <img class="sp-image" src="./images/slide-3.jpg" />
+              </li>
+          </ul>
 
         </section>
 
@@ -505,9 +501,10 @@
 
   <script src="./js/jquery.js"></script>
   <script src="./js/jquery.isotope.min.js"></script>
+  <script src="./js/responsiveslides.min.js"></script>
   <!-- <script src="https://use.fontawesome.com/89344806bd.js"></script> -->
   <script src="./js/offcanvas.js"></script>
-  <script src="./js/vanilla-swiper.js"></script>
+  <script src="./js/swiper.js"></script>
   <script src="./js/portofolio.js"></script>
 
 </body>
