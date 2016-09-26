@@ -6,8 +6,12 @@
 
 		&__img{
 			width: 100%;
+			display: none;
 
 			&--show{
+			  display: block;
+
+
 			  -webkit-animation-duration: .5s;
 			  animation-duration: .5s;
 			  -webkit-animation-fill-mode: both;
@@ -38,6 +42,10 @@
 
 			&--right{
 				right:2%;
+			}
+
+			@media screen and (max-width:640px) {
+				display: none;
 			}
 
 		}

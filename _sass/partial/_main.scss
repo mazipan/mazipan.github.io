@@ -7,20 +7,21 @@
 	}
 
 	&__about{
-		padding-top: 20px;
 		@extend %row;
+		padding: 20px 0 50px;
 		display: block;
 	}
 
 	&__portofolio{
-		padding-top: 20px;
 		@extend %row;
+		padding: 20px 0;
 		display: block;
+		background-color: $greyLighter;
 	}
 
 	&__skills{
-		padding-top: 20px;
 		@extend %row;
+		padding: 20px 0;
 		display: block;
 	}
 

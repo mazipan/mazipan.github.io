@@ -20,14 +20,32 @@
 		}
 	}
 
+	&__photo{
+	    margin-bottom: 20px;
+
+		img{			    
+			width: 150px;
+    		height: 150px;
+            border: .5px solid $grey;
+            @include border-radius(50%);
+		}
+
+	}
+
 	&__content{
-		font-size: 1.6rem;
 		color: $grey;
+		font-size: 1.4rem;
+	    max-width: 400px;
+	    width: 90%;
+	    text-align: center;
+	    margin: 0 auto;
+	    font-style: italic;
 	}
 
 	&__quote{
 		font-size: 1.1rem !important;
     	padding: 0 10px;
+    	font-style: italic !important;
 
 		&--left{
 			vertical-align: top;

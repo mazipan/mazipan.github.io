@@ -9,8 +9,9 @@
         <meta name="keywords" content="mazipan, mazipanneh, irfanmaulana, irfan, front end"/>            
         <meta name="description" content="Irfan Maulana | Front End Developer" />
 
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
-		<link rel="stylesheet" type="text/css" href="./css/style.css"> 
+    		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    		<link rel="stylesheet" type="text/css" href="./css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.css"> 
 
 
 </head>
@@ -19,53 +20,80 @@
   <header role="header" class="site__header header">
   		<div class="header__wrapper">
   			<div class="header__brand">
-  				<img src="./images/brand.png" alt="Irfan Maulana" title="Irfan Maulana"/>
+  				<img src="./images/irfan-maulana.jpg" alt="Irfan Maulana" title="Irfan Maulana"/>
   			</div>
-  			<div class="header__nav">
-  				<ul>
+
+  			<nav class="header__nav">      
+
+  				<ul class="header__nav--desktop">
   					<li><a href="#home">Home</a></li>
   					<li><a href="#about">About</a></li>
   					<li><a href="#portofolio">Portofolio</a></li>
   					<li><a href="#skills">Skills</a></li>
   				</ul>
-  			</div>
+
+          <div class="header__nav--mobile">
+            <button class="header__nav-btn" id="menu-toggle">
+              Toggle Menu
+            </button>
+          </div>  
+
+  			</nav>
+
   		</div>
   </header>
+
+  <div class="site__offcanvas offcanvas">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portofolio">Portofolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </div> 
 
   <main role="main" class="site__main main">
   		<div class="main__swipper swipper">
 
-        <section class="swipper__wrapper">
+        <section class="swipper__wrapper" id="home">
 
           <img class="swipper__img swipper__img--show" src="./images/slide-1.jpg" />
           <img class="swipper__img" src="./images/slide-2.jpg" />
-          <img class="swipper__img" src="./images/slide-3.jpeg" />
+          <img class="swipper__img" src="./images/slide-3.jpg" />
 
           <a class="swipper__btn swipper__btn--left" 
-              onclick="plusDivs(-1)">
+              onclick="doSlide(-1)">
 
             <i class="fa fa-chevron-circle-left"></i>
           </a>
 
           <a class="swipper__btn swipper__btn--right" 
-              onclick="plusDivs(1)">
+              onclick="doSlide(1)">
 
             <i class="fa fa-chevron-circle-right"></i>
           </a>
 
         </section>
 
-        <section class="main__about about">
+        <section class="main__about about" id="about">
           <div class="about__wrapper">
             <div class="about__title">
               <span>About</span>
               <span class="about__title-border"></span>
             </div>
+
+            <div class="about__photo">
+                <img src="./images/irfan-maulana.jpg" alt="Irfan Maulana" title="Irfan Maulana"/>
+            </div>
+
             <div class="about__content">
 
               <i class="about__quote about__quote--left fa fa-quote-left "></i>
 
-              <span>Software Developer | Blogger | Family Man</span>
+              <span>
+                A Man that craft some code to build a beauty and readable code, 
+                experienced in web and desktop technology
+              </span>
 
               <i class="about__quote about__quote--right fa fa-quote-right"></i>
 
@@ -73,26 +101,338 @@
           </div>
         </section>
 
-        <section class="main__portofolio portofolio">
+        <section class="main__portofolio portofolio" id="portofolio">
           <div class="portofolio__wrapper">
-            <div class="portofolio__title">
-              <span>Portofolio</span>
-              <span class="portofolio__title-border"></span>
-            </div>
-            <div class="portofolio__content">
 
-            </div>
+              <div class="portofolio__title">
+                <span>Portofolio</span>
+                <span class="portofolio__title-border"></span>
+              </div>
+              
+              <div class="portofolio__content">
+                <div class="portofolio__tab">
+                  <div class="portofolio__tab-item portofolio__tab-item--active" data-filter="*">
+                    ALL
+                  </div>
+                  <div class="portofolio__tab-item" data-filter=".portofolio__box-item--web">
+                    WEB
+                  </div>
+                  <div class="portofolio__tab-item" data-filter=".portofolio__box-item--desktop">
+                    DESKTOP
+                  </div>
+                  <div class="portofolio__tab-item" data-filter=".portofolio__box-item--mockup">
+                    MOCKUP
+                  </div>
+                </div>
+              </div>
+
+              <div class="portofolio__box-wrapper">
+                <div class="portofolio__box-inner">
+
+                  <div class="portofolio__box-item portofolio__box-item--desktop">
+                      <img src="./images/full-servo.png" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Servo 4.0</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java, swing, jide, jdaf</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--web">
+                      <img src="./images/full-siaga.jpg" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Dashboard SIAGA</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java, extjs, gmaps</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--web">
+                      <img src="./images/full-cms.jpg" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Dashboard CMS</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java, extjs, gmaps, fusion-chart</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--web">
+                      <img src="./images/full-incident.jpg" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Live Incident</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java, extjs, fusion-chart</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--web">
+                      <img src="./images/full-transport.jpg" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Transport Monitoring</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java, extjs, gmaps</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--web">
+                      <img src="./images/full-webportal.png" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">WEB PORTAL</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java, extjs, gmpas, fusion-chart</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--mockup">
+                      <img src="./images/full-network.jpg" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Network Dashboard</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : extjs, gmpas, fusion-chart</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--mockup">
+                      <img src="./images/full-tmnd.png" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">TMND</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : extjs, gmpas, fusion-chart</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--web">
+                      <img src="./images/full-library-extjs.jpg" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Library Web App</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java, extjs</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--web">
+                      <img src="./images/full-library-servlet.jpg" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Library Online</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--desktop">
+                      <img src="./images/full-suggestion.jpg" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Suggestion System</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java, swing</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--web">
+                      <img src="./images/full-blipulsa.png" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Blibli.com Pulsa</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java, springmvc, angulajs</span>
+                          </a>
+                      </div>  
+                  </div>
+
+                  <div class="portofolio__box-item portofolio__box-item--web">
+                      <img src="./images/full-blipulsa-data.jpg" />
+                      <div class="portofolio__box-item-info">
+                          <a href="#" class="portofolio__box-item-name">
+                            <span class="portofolio__box-item-title">Blibli.com Data</span>
+                            <br/>
+                            <span class="portofolio__box-item-tag">tag : java, springmvc, angulajs</span>
+                          </a>
+                      </div>  
+                  </div>
+
+
+                </div>
+
+              </div>
+
           </div>
         </section>
 
-        <section class="main__skills skills">
+        <section class="main__skills skills" id="skills">
           <div class="skills__wrapper">
             <div class="skills__title">
               <span>Skills</span>
               <span class="skills__title-border"></span>
             </div>
             <div class="skills__content">
-              
+
+              <div class="skills__content-wrapper">
+
+                <!-- Javascript -->
+                <div class="skills__item">
+                  <div class="skills__item-title">
+                    Javascript
+                  </div>
+
+                  <div class="skills__item-progress">
+                    <div class="skills__item-progress--empty">
+                    </div>
+                    <div class="skills__item-progress--full skills__item-progress--js">
+                    </div>
+                  </div>
+                </div>    
+
+                <!-- AngularJS -->
+                <div class="skills__item">
+                  <div class="skills__item-title">
+                    AngularJS
+                  </div>
+
+                  <div class="skills__item-progress">
+                    <div class="skills__item-progress--empty">
+                    </div>
+                    <div class="skills__item-progress--full skills__item-progress--angular">
+                    </div>
+                  </div>
+                </div>    
+
+                <!-- HTML -->
+                <div class="skills__item">
+                  <div class="skills__item-title">
+                    HTML
+                  </div>
+
+                  <div class="skills__item-progress">
+                    <div class="skills__item-progress--empty">
+                    </div>
+                    <div class="skills__item-progress--full skills__item-progress--html">
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- CSS -->
+                <div class="skills__item">
+                  <div class="skills__item-title">
+                    CSS
+                  </div>
+
+                  <div class="skills__item-progress">
+                    <div class="skills__item-progress--empty">
+                    </div>
+                    <div class="skills__item-progress--full skills__item-progress--css">
+                    </div>
+                  </div>
+                </div>  
+
+                <!-- SASS -->
+                <div class="skills__item">
+                  <div class="skills__item-title">
+                    SASS
+                  </div>
+
+                  <div class="skills__item-progress">
+                    <div class="skills__item-progress--empty">
+                    </div>
+                    <div class="skills__item-progress--full skills__item-progress--sass">
+                    </div>
+                  </div>
+                </div>  
+
+
+                <!-- Java -->
+                <div class="skills__item">
+                  <div class="skills__item-title">
+                    Java
+                  </div>
+
+                  <div class="skills__item-progress">
+                    <div class="skills__item-progress--empty">
+                    </div>
+                    <div class="skills__item-progress--full skills__item-progress--java">
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- NodeJs -->
+                <div class="skills__item">
+                  <div class="skills__item-title">
+                    NodeJs
+                  </div>
+
+                  <div class="skills__item-progress">
+                    <div class="skills__item-progress--empty">
+                    </div>
+                    <div class="skills__item-progress--full skills__item-progress--node">
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- PHP -->
+                <div class="skills__item">
+                  <div class="skills__item-title">
+                    PHP
+                  </div>
+
+                  <div class="skills__item-progress">
+                    <div class="skills__item-progress--empty">
+                    </div>
+                    <div class="skills__item-progress--full skills__item-progress--php">
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- MySQL Database -->
+                <div class="skills__item">
+                  <div class="skills__item-title">
+                    MySQL
+                  </div>
+
+                  <div class="skills__item-progress">
+                    <div class="skills__item-progress--empty">
+                    </div>
+                    <div class="skills__item-progress--full skills__item-progress--mysql">
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- MongoDB Database -->
+                <div class="skills__item">
+                  <div class="skills__item-title">
+                    MongoDB
+                  </div>
+
+                  <div class="skills__item-progress">
+                    <div class="skills__item-progress--empty">
+                    </div>
+                    <div class="skills__item-progress--full skills__item-progress--mongo">
+                    </div>
+                  </div>
+                </div>          
+
+              </div>
+
             </div>
           </div>
         </section>
@@ -105,7 +445,7 @@
   	<div class="footer__wrapper">
 
   		<div class="footer__text">
-  			<span>Crafted with <i class="fa fa-heart-o"></i> by Irfan Maulana</span>
+  			<span>Crafted with &nbsp;<i class="fa fa-heart-o"></i>&nbsp; by Irfan Maulana</span>
   		</div>
 
   		<ul class="footer__list">
@@ -148,8 +488,12 @@
   	</div>
   </footer>
 
-  <script src="https://use.fontawesome.com/89344806bd.js"></script>
-  <script src="./js/swiper.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.isotope.min.js"></script>
+  <!-- <script src="https://use.fontawesome.com/89344806bd.js"></script> -->
+  <script src="./js/offcanvas.js"></script>
+  <script src="./js/vanilla-swiper.js"></script>
+  <script src="./js/portofolio.js"></script>
 
 </body>
 </html>

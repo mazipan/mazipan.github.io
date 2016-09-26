@@ -9,14 +9,20 @@
 	font-size: 1.4rem;
 
 	&__header {}
+	&__offcanvas {}
 	&__main {
 		margin-top: 60px;
 	}
 	&__footer {}
+
+	&--overflow-hidden{
+		overflow: hidden;
+	}
 	
 }
 
 @import "partial/header";
+@import "partial/offcanvas";
 @import "partial/main";
 @import "partial/swipper";
 @import "partial/about";

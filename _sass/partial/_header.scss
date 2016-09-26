@@ -27,6 +27,64 @@
 		float: right;
 		padding: 16px 10px;
 
+		&--desktop{
+			display: block;
+			@media screen and (max-width:640px) {
+				display: none;
+			}
+		}
+
+		&--mobile{
+			display: none;
+			@media screen and (max-width:640px) {
+				display: block;
+			}
+		}
+
+		&-btn{
+
+			position: fixed;
+			top: 0;
+			right: 0;
+		    width: 2.5em;
+		    height: 2.3em;
+		    border: none;
+		    font-size: 1.2em;
+		    color: transparent;
+		    background: transparent;
+		    cursor: pointer;
+
+			&:before{
+				position: absolute;
+			    top: 0.5em;
+			    right: 0.5em;
+			    bottom: 0.5em;
+			    left: 0.5em;
+			    background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+			    content: '';
+			}
+
+			&--close{
+				&:before, &:after{
+		    		content: '';
+				    position: absolute;
+				    width: 2px;
+				    height: 100%;
+				    top: 0;
+				    left: 50%;
+				    background: #373a47;
+		    	}
+
+		    	&:before{
+		    		@include rotate(45deg);
+		    	}
+
+		    	&:after{
+		    		@include rotate(-45deg);
+		    	}
+			}
+		}
+
 		ul{
 			margin: 0;	
 			padding: 0;	
