@@ -1,32 +1,34 @@
-.footer {
-	background: $blackLight;
-	color: #fff;
-	padding: 20px 0;
-	margin: 0 auto;
-	
-	&__wrapper{
-		text-align: center;	
-	}
+.footer
+{
+    margin: 0 auto;
+    padding: 20px 0;
+    background: $blackLight;
+    color: #fff;
 
-	&__text{
-		font-size: 0.9rem;
-	}
+    &__wrapper
+    {
+        text-align: center;
+    }
+    &__text
+    {
+        font-size: .9rem;
+    }
+    &__list
+    {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__icon
+    {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 1.6rem;
 
-	&__list{
-		margin: 0;	
-		padding: 0;	
-		list-style: none;	
-		display: block;
-	}
-
-	&__icon{
-		display: inline-block;
-	    font-size: 1.6rem;
-	    margin: 0 5px;
-
-	    i{
-	    	color: #fff;
-	    }
-
-	}
+        i
+        {
+            color: #fff;
+        }
+    }
 }

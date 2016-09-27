@@ -1,0 +1,88 @@
+.speakerat
+{
+    &__wrapper
+    {
+        text-align: center;
+    }
+    &__title
+    {
+        padding-bottom: 20px;
+        color: $greyDarker;
+        font-size: 2.4rem;
+        line-height: 2;
+
+        &-border
+        {
+            display: block;
+            margin: 0 auto 30px;
+            width: 80px;
+            height: 1px;
+            border-bottom: 1px solid rgba(255, 255, 255, .901961);
+            background-color: #d3c6c6;
+        }
+    }
+    &__content
+    {
+        margin: 0 auto;
+        color: $grey;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    &__head
+    {
+        margin: 0;
+        padding: 0;
+        padding: 5px 0;
+        width: 100%;
+        list-style: none;
+
+        li
+        {
+            display: inline-block;
+            padding: 5px 0;
+            width: 40%;
+            text-align: left;
+
+            &:first-child
+            {
+                width: 10%;
+            }
+        }
+    }
+    &__item
+    {
+        margin: 0;
+        padding: 0;
+        padding: 5px 0;
+        width: 100%;
+        list-style: none;
+
+        li
+        {
+            display: inline-block;
+            padding: 5px 0;
+            width: 40%;
+            vertical-align: top;
+            text-align: left;
+            font-size: 1rem;
+
+            &:first-child
+            {
+                width: 10%;
+            }
+        }
+    }
+    &__link
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 1rem;
+
+        a
+        {
+            color: $blue;
+            text-decoration: none;
+        }
+    }
+}

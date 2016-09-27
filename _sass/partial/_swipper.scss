@@ -1,61 +1,63 @@
-.swipper{
-	position: relative;
+.swipper
+{
+    position: relative;
 
-	.next , .prev {
-        display: inline-block;
+    .next,
+    .prev
+    {
         position: absolute;
         top: 30%;
         z-index: 10;
-        background-color: rgba(28, 27, 27, 0.5);
-        color: #fff;
+        display: inline-block;
         padding: 20px;
-        
-        i{
+        background-color: rgba(28, 27, 27, .5);
+        color: #fff;
+
+        i
+        {
             font-size: 2.4rem;
         }
-
     }
-        
-    .next {
+    .next
+    {
         right: 0;
     }
-    
-    .prev {
+    .prev
+    {
         left: 0;
     }
-
-	&__slide{
+    &__slide
+    {
         position: relative;
-        list-style: none;
         overflow: hidden;
-        width: 100%;
+        margin: 0;
         padding: 0;
-        margin: 0;    
+        width: 100%;
+        list-style: none;
 
-        li {
-            -webkit-backface-visibility: hidden;
+        li
+        {
             position: absolute;
+            top: 0;
+            left: 0;
             display: none;
             width: 100%;
-            left: 0;
-            top: 0;
+            -webkit-backface-visibility: hidden;
 
-            &:first-child {
+            &:first-child
+            {
                 position: relative;
                 display: block;
                 float: left;
             }
         }
-
-        img {
+        img
+        {
             display: block;
-            height: auto;
             float: left;
             width: 100%;
+            height: auto;
             border: 0;
         }
     }
-	
 }
-
-

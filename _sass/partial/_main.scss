@@ -1,28 +1,47 @@
-.main{
-	
-	&__swipper{
-		overflow: hidden;
-		display: block;
-		@include clearfix(); 
-	}
+.main
+{
+    &__swipper
+    {
+        @include clearfix();
 
-	&__about{
-		@extend %row;
-		padding: 20px 0 50px;
-		display: block;
-	}
+        display: block;
+        overflow: hidden;
+    }
+    &__about
+    {
+        @extend %row;
 
-	&__portofolio{
-		@extend %row;
-		padding: 20px 0;
-		display: block;
-		background-color: $greyLighter;
-	}
+        display: block;
+        padding: 20px 0 50px;
+    }
+    &__portofolio
+    {
+        @extend %row;
 
-	&__skills{
-		@extend %row;
-		padding: 20px 0;
-		display: block;
-	}
+        display: block;
+        padding: 20px 0;
+        background-color: $greyLighter;
+    }
+    &__skills
+    {
+        @extend %row;
 
+        display: block;
+        padding: 20px 0;
+    }
+    &__experience
+    {
+        @extend %row;
+
+        display: block;
+        padding: 20px 0;
+        background-color: $greyLighter;
+    }
+    &__speakerat
+    {
+        @extend %row;
+
+        display: block;
+        padding: 20px 0;
+    }
 }

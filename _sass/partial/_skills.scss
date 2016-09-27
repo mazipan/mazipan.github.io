@@ -1,79 +1,82 @@
-.skills{
+.skills
+{
+    $progress: 200;
 
-	&__wrapper{
-		text-align: center;
-	}
+    &__wrapper
+    {
+        text-align: center;
+    }
+    &__title
+    {
+        padding-bottom: 20px;
+        color: $greyDarker;
+        font-size: 2.4rem;
+        line-height: 2;
 
-	&__title{
-		font-size: 2.4rem;
-		color: $greyDarker;
-		padding-bottom: 20px;
-		line-height: 2;
+        &-border
+        {
+            display: block;
+            margin: 0 auto 30px;
+            width: 80px;
+            height: 1px;
+            border-bottom: 1px solid rgba(255, 255, 255, .901961);
+            background-color: #d3c6c6;
+        }
+    }
+    &__content
+    {
+        @extend %row;
 
-		&-border{
-			display: block;
-		    height: 1px;
-		    width: 80px;
-		    background-color: #d3c6c6;
-		    margin: 0px auto 30px;
-		    border-bottom: 1px solid rgba(255, 255, 255, 0.901961);
-		}
-	}
+        &-wrapper
+        {
+            width: 100%;
+        }
+    }
+    &__item
+    {
+        @include clearfix();
 
-	&__content{
-		@extend %row;
+        display: inline-block;
+        padding: 5px;
+        min-width: #{$progress+100}px;
+        width: 40%;
 
-		&-wrapper{
-			width: 100%;
-		}
-	}
+        &-title
+        {
+            display: inline-block;
+            padding-right: 10px;
+            width: 80px;
+            color: $grey;
+            vertical-align: middle;
+            text-align: left;
+            font-size: 1rem;
+        }
+        &-progress
+        {
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            width: #{$progress}px;
+            height: 1em;
+            background-color: $greyLight;
+            vertical-align: middle;
 
-	$progress: 200;
-	&__item{
-		@include clearfix();
-		display : inline-block;
-    	width: 40%;
-    	min-width: #{$progress+100}px;
-    	padding: 5px;
-
-		&-title{
-			display: inline-block;
-		    vertical-align: middle;
-		    color: $grey;
-			font-size: 1rem;
-		    padding-right: 10px;    
-		    width: 80px;
-    		text-align: left;
-		}
-
-
-		
-		&-progress{
-			display: inline-block;
-		    vertical-align: middle;
-			position: relative;
-		    background-color: $greyLight;
-		    width: #{$progress}px;
-		    height: 1em;
-		    z-index: 1;
-
-		    &-fill {
-		        width: #{$progress}px;
-		        background-color: $blackLight;
-		        position: absolute;
-		        left: 0;
-		        top: 0;
-		        height: 1em;
-		        z-index: 2;
-		    }
-
-		    &-value{
-		    	text-align: center;
-		    	color: #fff;
-		    	font-size: 1.1rem;
-		    }
-
-		}
-	    
-	}
+            &-fill
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: #{$progress}px;
+                height: 1em;
+                background-color: $blackLight;
+            }
+            &-value
+            {
+                color: #fff;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+        }
+    }
 }

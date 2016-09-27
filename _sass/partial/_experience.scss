@@ -1,4 +1,4 @@
-.about
+.experience
 {
     &__wrapper
     {
@@ -21,42 +21,12 @@
             background-color: #d3c6c6;
         }
     }
-    &__photo
-    {
-        margin-bottom: 20px;
-
-        img
-        {
-            @include border-radius(50%);
-
-            width: 150px;
-            height: 150px;
-            border: .5px solid $grey;
-        }
-    }
     &__content
     {
         margin: 0 auto;
-        max-width: 400px;
-        width: 90%;
         color: $grey;
         text-align: center;
-        font-style: italic;
         font-size: 1.4rem;
     }
-    &__quote
-    {
-        padding: 0 10px;
-        font-style: italic !important;
-        font-size: 1.1rem !important;
-
-        &--left
-        {
-            vertical-align: top;
-        }
-        &--right
-        {
-            vertical-align: bottom;
-        }
-    }
 }
+

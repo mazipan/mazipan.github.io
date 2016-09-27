@@ -1,64 +1,66 @@
 
-.offcanvas{
-	visibility: hidden;
-    position: fixed;    
+.offcanvas
+{
+    position: fixed;
     right: 0;
     z-index: 1001;
+    visibility: hidden;
     width: 100%;
     height: 100%;
 
-    
-    &--animated{
-
-		ul{
-			@include translate3d(100%, 0, 0);
-		}	
-		
+    &--animated
+    {
+        ul
+        {
+            @include translate3d(100%, 0, 0);
+        }
     }
+    &--opened
+    {
+        visibility: visible;
 
-    &--opened{
-		visibility: visible;
-
-		ul{
-			@include translate3d(0, 0, 0);
-		}
-
-		.offcanvas__overlay{
-			opacity: 1;
-		}
+        ul
+        {
+            @include translate3d(0, 0, 0);
+        }
+        .offcanvas__overlay
+        {
+            opacity: 1;
+        }
     }
+    &__overlay
+    {
+        @include transition(opacity .5s);
 
-    &__overlay{
-	    position: absolute;
-	    width: 100%;
-	    height: 100%;
-	    background-color: rgba(0, 0, 0, 0.4);
-	    opacity: 0;
-	    @include transition(opacity 0.5s);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        opacity: 0;
     }
+    ul
+    {
+        @include transition(all .5s);
 
-    ul{
-		margin: 0;	
-		padding: 0;	
-		list-style: none;
-		float: right;
-    	width: 60%;
-    	height: 100%;
-    	background-color: $blackLight;
+        float: right;
+        margin: 0;
+        padding: 0;
+        width: 60%;
+        height: 100%;
+        background-color: $blackLight;
+        list-style: none;
 
-    	@include transition(all 0.5s);
+        li
+        {
+            display: block;
+            padding: 20px 20px 0 30px;
 
-		li{
-		    display: block;
-			padding: 20px 20px 0px 30px;
-
-			a{
-				text-decoration: none;
-				font-size: 1.5rem;
-				color: #fff;
-			}
-
-		}
-
-	}
+            a
+            {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        }
+    }
 }

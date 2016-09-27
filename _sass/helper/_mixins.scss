@@ -1,160 +1,203 @@
 // Transform: translate3d
-@mixin translate3d($x, $y, $z) {
+@mixin translate3d($x, $y, $z)
+{
     -webkit-transform: translate3d($x, $y, $z);
-    transform: translate3d($x, $y, $z);
+            transform: translate3d($x, $y, $z);
 }
 
 // Transform: translate XY
-@mixin translate($x, $y) {
+@mixin translate($x, $y)
+{
     -webkit-transform: translate($x, $y);
-    -ms-transform: translate($x, $y); 
-    -o-transform: translate($x, $y);
-    transform: translate($x, $y);
+        -ms-transform: translate($x, $y);
+         -o-transform: translate($x, $y);
+            transform: translate($x, $y);
 }
 
 // Transform: translate X
-@mixin translateX($x) {
+@mixin translateX($x)
+{
     -webkit-transform: translateX($x);
-    -ms-transform: translateX($x); 
-    -o-transform: translateX($x);
-    transform: translateX($x);
+        -ms-transform: translateX($x);
+         -o-transform: translateX($x);
+            transform: translateX($x);
 }
 // Transform: translate Y
-@mixin translateY($y) {
+@mixin translateY($y)
+{
     -webkit-transform: translateY($y);
-    -ms-transform: translateY($y); 
-    -o-transform: translateY($y);
-    transform: translateY($y);
+        -ms-transform: translateY($y);
+         -o-transform: translateY($y);
+            transform: translateY($y);
 }
 
 // Backface-visibility
-@mixin backface-visibility($backface){
+@mixin backface-visibility($backface)
+{
     -webkit-backface-visibility: $backface;
-    -moz-backface-visibility: $backface;
-    -ms-backface-visibility: $backface;
-    -o-backface-visibility: $backface;
-    backface-visibility: $backface;
+       -moz-backface-visibility: $backface;
+        -ms-backface-visibility: $backface;
+         -o-backface-visibility: $backface;
+            backface-visibility: $backface;
 }
 
 // Transform: rotate
-@mixin rotate($degrees) {
+@mixin rotate($degrees)
+{
     -webkit-transform: rotate($degrees);
-    -ms-transform: rotate($degrees); 
-    -o-transform: rotate($degrees);
-    transform: rotate($degrees);
-} 
+        -ms-transform: rotate($degrees);
+         -o-transform: rotate($degrees);
+            transform: rotate($degrees);
+}
 
 // Transitions
-@mixin transition($transition...) {
+@mixin transition($transition...)
+{
     -webkit-transition: $transition;
-    -o-transition: $transition;
-    -moz-transition: $transition;
-    -ms-transition: $transition;
-    transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
 }
 
 // Transition Delay
-@mixin transition-delay($transition-delay) {
+@mixin transition-delay($transition-delay)
+{
     -webkit-transition-delay: $transition-delay;
-    transition-delay: $transition-delay;
+            transition-delay: $transition-delay;
 }
 
 // Transitions : transform
-@mixin transition-transform($transition...) {
+@mixin transition-transform($transition...)
+{
     -webkit-transition: -webkit-transform $transition;
-    -moz-transition: -moz-transform $transition;
-    -o-transition: -o-transform $transition;
-    transition: transform $transition;
+       -moz-transition:    -moz-transform $transition;
+         -o-transition:      -o-transform $transition;
+            transition:         transform $transition;
 }
 
 // Drop Shadow
-@mixin box-shadow($shadow...) {
-    -webkit-box-shadow: $shadow; 
-    -moz-box-shadow: $shadow;
-    box-shadow: $shadow;
+@mixin box-shadow($shadow...)
+{
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+            box-shadow: $shadow;
 }
 
 // Box Sizing
-@mixin box-sizing($box-size){
+@mixin box-sizing($box-size)
+{
     -webkit-box-sizing: $box-size;
-    -moz-box-sizing: $box-size;
-    -o-box-sizing: $box-size;
-    -ms-box-sizing: $box-size;
-    box-sizing: $box-size;
+       -moz-box-sizing: $box-size;
+            box-sizing: $box-size;
+
+         -o-box-sizing: $box-size;
+        -ms-box-sizing: $box-size;
 }
 
 // Placeholder text
-@mixin placeholder($color) {  
-    ::-moz-placeholder {
-        color: $color;
+@mixin placeholder($color)
+{
+    ::-moz-placeholder
+    {
         opacity: 1;
+        color: $color;
     }
-    :-ms-input-placeholder { color: $color; } 
-    ::-webkit-input-placeholder  { color: $color; } 
+    :-ms-input-placeholder
+    {
+        color: $color;
+    }
+    ::-webkit-input-placeholder
+    {
+        color: $color;
+    }
 }
 
 // Placeholder padding
-@mixin placeholder-padding($padding) {  
-    ::-moz-placeholder {padding: $padding; }
-    :-ms-input-placeholder { padding: $padding; } 
-    ::-webkit-input-placeholder  { padding: $padding; } 
+@mixin placeholder-padding($padding)
+{
+    ::-moz-placeholder
+    {
+        padding: $padding;
+    }
+    :-ms-input-placeholder
+    {
+        padding: $padding;
+    }
+    ::-webkit-input-placeholder
+    {
+        padding: $padding;
+    }
 }
 
 
 // Border Radius
-@mixin border-radius($radius){
+@mixin border-radius($radius)
+{
     -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
+       -moz-border-radius: $radius;
+            border-radius: $radius;
 }
 
 // Filter
-@mixin filter($filter){
+@mixin filter($filter)
+{
     -webkit-filter: $filter;
-    filter: $filter;
+            filter: $filter;
 }
 
 // Clearfix
-@mixin clearfix() {
+@mixin clearfix()
+{
     *zoom: 1;
     &:before,
-        &:after {
-        content: " "; 
-        display: table; 
+    &:after
+    {
+        display: table;
+
+        content: ' ';
     }
-    &:after {
+    &:after
+    {
         clear: both;
     }
 }
 
 // Responsive Image 
-@mixin img-responsive($display: block) {
+@mixin img-responsive($display: block)
+{
     display: $display;
-    max-width: 100%; 
+
+    max-width: 100%;
     height: auto;
-} 
+}
 
 // Opacity
-@mixin opacity($opacity) {
-    opacity: $opacity;  
+@mixin opacity($opacity)
+{
+    opacity: $opacity;
+
     $opacity-ie: ($opacity * 100);
     filter: alpha(opacity=$opacity-ie);
-} 
+}
 
 // Calculate widht for equal size of block
-@function equal-size($element-size){
+@function equal-size($element-size)
+{
     @return 100%/$element-size;
 }
 
 // Calculate percentage of width 
-@function calc-percent($target, $container) {
+@function calc-percent($target, $container)
+{
     @return ($target / $container) * 100%;
 }
 
 // Background Size
-@mixin background-size($size){
+@mixin background-size($size)
+{
     -webkit-background-size: $size;
-    -moz-background-size: $size;
-    background-size: $size;
-    -o-background-size: $size;
+       -moz-background-size: $size;
+         -o-background-size: $size;
+            background-size: $size;
 }

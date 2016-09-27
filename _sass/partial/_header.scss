@@ -1,126 +1,137 @@
-.header{	
-	position: fixed;
-	width: 100%;
-	height: 60px;
-	top: 0;
-	z-index: 100;
-	background: rgba(255,255,255,.95294);
-	@include box-shadow(0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15));
+.header
+{
+    @include box-shadow(0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15));
 
-	&__wrapper{
-	
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    background: rgba(255,255,255,.95294);
 
-	}
+    &__brand
+    {
+        display: inline-block;
+        float: left;
+        padding: 5px 10px;
 
-	&__brand{
-		display: inline-block;
-		float: left;
-		padding: 5px 10px;
+        img
+        {
+            width: 50px;
+        }
+    }
+    &__nav
+    {
+        display: inline-block;
+        float: right;
+        padding: 16px 10px;
 
-		img{
-			width: 50px;
-		}
-	}
+        &--desktop
+        {
+            display: block;
 
-	&__nav{
-		display: inline-block;
-		float: right;
-		padding: 16px 10px;
+            @media screen and (max-width:640px)
+            {
+                display: none;
+            }
+        }
+        &--mobile
+        {
+            display: none;
 
-		&--desktop{
-			display: block;
-			@media screen and (max-width:640px) {
-				display: none;
-			}
-		}
+            @media screen and (max-width:640px)
+            {
+                display: block;
+            }
+        }
+        &-btn
+        {
+            @include rotate(0deg);
+            @include transition(.5s ease-in-out);
 
-		&--mobile{
-			display: none;
-			@media screen and (max-width:640px) {
-				display: block;
-			}
-		}
+            position: relative;
+            margin: -5px;
+            width: 60px;
+            height: 45px;
+            cursor: pointer;
 
-		&-btn{
-			  width: 60px;
-			  height: 45px;
-			  position: relative;    
-			  margin: -5px;
-			  cursor: pointer;
+            span
+            {
+                @include rotate(0deg);
+                @include transition(.25s ease-in-out);
 
-		      @include rotate(0deg);
-		      @include transition(.5s ease-in-out);
+                position: absolute;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 9px;
+                background: $blackLight;
+                opacity: 1;
 
-		      span{
-		      	  display: block;
-				  position: absolute;
-				  height: 9px;
-				  width: 100%;
-				  background: $blackLight;
-				  opacity: 1;
-				  left: 0;
+                &:nth-child(1)
+                {
+                    top: 0;
+                }
+                &:nth-child(2),
+                &:nth-child(3)
+                {
+                    top: 18px;
+                }
+                &:nth-child(4)
+                {
+                    top: 36px;
+                }
+            }
+            &--close
+            {
+                span
+                {
+                    &:nth-child(1)
+                    {
+                        top: 18px;
+                        left: 50%;
+                        width: 0;
+                    }
+                    &:nth-child(2)
+                    {
+                        @include rotate(45deg);
+                    }
+                    &:nth-child(3)
+                    {
+                        @include rotate(-45deg);
+                    }
+                    &:nth-child(4)
+                    {
+                        top: 18px;
+                        left: 50%;
+                        width: 0;
+                    }
+                }
+            }
+        }
+        ul
+        {
+            margin: 0;
+            padding: 0;
+            list-style: none;
 
-		      	  @include rotate(0deg);
-		      	  @include transition(.25s ease-in-out);
+            li
+            {
+                display: inline-block;
+                margin-right: 1.2em;
 
-		      	  &:nth-child(1) {
-					  top: 0px;
-				  }
-				  &:nth-child(2), &:nth-child(3) {
-					  top: 18px;
-				  }
-				  &:nth-child(4) {
-					  top: 36px;
-				  }
-		      }		
+                a
+                {
+                    color: #000;
+                    text-decoration: none;
+                    font-size: 1.2rem;
 
-
-			&--close{
-
-				span{
-					  &:nth-child(1) {
-						top: 18px;
-						width: 0%;
-						left: 50%;
-					  }
-					  &:nth-child(2){
-					  	@include rotate(45deg);
-					  }
-					  &:nth-child(3){
-					  	@include rotate(-45deg);
-					  }
-					  &:nth-child(4) {
-						  top: 18px;
-						  width: 0%;
-						  left: 50%;
-					  }
-				}
-
-			}
-		}
-
-		ul{
-			margin: 0;	
-			padding: 0;	
-			list-style: none;	
-
-			li{
-				display: inline-block;
-				margin-right: 1.2em;
-
-				a{
-					text-decoration: none;
-					font-size: 1.2rem;
-					color: #000;
-
-					&:hover{
-						font-weight: bold;
-					}
-				}
-
-			}
-
-		}
-	}
-
+                    &:hover
+                    {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
 }
