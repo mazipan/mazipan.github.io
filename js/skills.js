@@ -1,11 +1,9 @@
 $(document).ready(function () {
 
     $('.skills__content-wrapper')
-        .bind('inview', 
-            function(event, visible, visiblePartX, visiblePartY) {
-
-        setAndAnimateSkills();
-
+        .bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+            setAndAnimateSkills();
+            $('.skills__content-wrapper').off('inview');
     });
         
 

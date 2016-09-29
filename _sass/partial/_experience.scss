@@ -24,9 +24,80 @@
     &__content
     {
         margin: 0 auto;
-        color: $grey;
+        color: $black;
         text-align: center;
-        font-size: 1.4rem;
     }
+
+    &__table{
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    &__col{
+        padding: 0;
+
+        &--border{
+            position: relative;
+            width: 4px;
+            background-color: $blackLight;
+        }
+    }
+
+    &__line{
+        position: absolute;
+        width: 100px;
+        height: 4px;
+        background-color: $blackLight;
+
+        i{
+            color: $blackLight;  
+            font-size: 2.2rem;
+            position: absolute;
+            left: 99px;
+            top: -15px;
+        }
+
+        &--left{
+            left: -100px;
+            i{
+                color: $blackLight;  
+                font-size: 2.2rem;
+                position: absolute;
+                right: 100px;
+                left: -29px;
+                top: -15px;
+            }
+        }
+    }
+
+    &__data{
+
+        img{
+            height: 50px;
+            padding: 10px 0;
+        }
+
+        @media screen and (max-width:640px)
+        {
+            padding: 250px 5px 0 5px;
+        }
+    }
+
+    &__period{
+        font-size: 1rem;
+        padding: 3px;
+        background-color: $greyLight;
+        @include border-radius(3px);
+    }
+
+    &__company{
+        font-size: 1.2rem;
+    }
+
+    &__role{
+        font-size: 1.2rem;
+        color: $grey;
+    }
+
 }
 

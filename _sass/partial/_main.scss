@@ -22,14 +22,14 @@
         padding: 20px 0;
         background-color: $greyLighter;
     }
-    &__skills
+    &__experience
     {
         @extend %row;
 
         display: block;
         padding: 20px 0;
     }
-    &__experience
+    &__skills
     {
         @extend %row;
 
