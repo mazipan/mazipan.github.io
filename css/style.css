@@ -920,7 +920,8 @@ textarea {
   border-spacing: 0; }
 
 .experience__col {
-  padding: 0; }
+  padding: 0;
+  width: 49.85%; }
   .experience__col--border {
     position: relative;
     width: 4px;
