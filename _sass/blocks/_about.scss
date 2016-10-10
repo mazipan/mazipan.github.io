@@ -37,18 +37,37 @@
     &__content
     {
         margin: 0 auto;
-        max-width: 400px;
+        max-width: 600px;
         width: 90%;
-        color: $grey;
         text-align: center;
+    }
+    &__h2
+    {
+        font-size: 1.3rem;
+        margin: 0;
+        font-weight: normal;
+        color: $greyDarker;
+        padding-bottom: 20px;
+
+        small{
+            color: $grey;
+            font-size: 70%;
+            display: block;
+        }
+    }
+    &__h3
+    {
+        font-size: 1.1rem;
+        margin: 0;
+        font-weight: normal;
         font-style: italic;
-        font-size: 1.4rem;
+        color: $grey;
     }
     &__quote
     {
         padding: 0 10px;
         font-style: italic !important;
-        font-size: 1.1rem !important;
+        font-size: 1rem !important;
 
         &--left
         {
@@ -59,4 +78,32 @@
             vertical-align: bottom;
         }
     }
+
+    &__slide
+    {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+
+        li
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            width: 100%;
+            -webkit-backface-visibility: hidden;
+
+            &:first-child
+            {
+                position: relative;
+                display: block;
+                float: left;
+            }
+        }
+    }
+
 }

@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                 dist: {
                     options:{
                         sourcemap: 'true',
-                        style: 'nested',
+                        style: 'compact',
                         update: true
                     },
                     files: [{

@@ -13,4 +13,15 @@ $(document).ready(function () {
         nextText: "<i class='fa fa-angle-right'></i>"
     });
 
+   $("#about__slide").responsiveSlides({
+        auto: true,
+        speed: 500,
+        timeout: 5000,
+        pager: false,
+        nav: false,
+        random: false,
+        pause: false,
+        pauseControls: false
+    });
+
 });
