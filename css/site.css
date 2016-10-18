@@ -401,7 +401,7 @@ textarea {
 .site {
   margin: 0;
   font-size: 1.4rem;
-  font-family: 'Roboto Condensed', serif; }
+  font-family: 'Indie Flower', cursive; }
   .site__main {
     margin-top: 60px; }
   .site--overflow-hidden {
@@ -432,10 +432,11 @@ textarea {
       -moz-border-radius: 3px;
       border-radius: 3px; }
   .header__title {
-    margin-left: .5em;
+    font-family: 'Lobster', cursive;
     font-style: italic;
     font-size: 1.8rem;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-left: .5em; }
   .header__nav--desktop {
     display: block; }
     @media screen and (max-width: 640px) {
@@ -670,7 +671,8 @@ textarea {
   padding-bottom: 20px;
   color: #838383;
   font-size: 2.4rem;
-  line-height: 2; }
+  line-height: 2;
+  font-family: 'Lobster', cursive; }
   .about__title-border {
     display: block;
     margin: 0 auto 30px;
@@ -748,7 +750,8 @@ textarea {
   padding-bottom: 20px;
   color: #838383;
   font-size: 2.4rem;
-  line-height: 2; }
+  line-height: 2;
+  font-family: 'Lobster', cursive; }
   .portofolio__title-border {
     display: block;
     margin: 0 auto 30px;
@@ -908,7 +911,8 @@ textarea {
   padding-bottom: 20px;
   color: #838383;
   font-size: 2.4rem;
-  line-height: 2; }
+  line-height: 2;
+  font-family: 'Lobster', cursive; }
   .skills__title-border {
     display: block;
     margin: 0 auto 30px;
@@ -968,7 +972,8 @@ textarea {
   padding-bottom: 20px;
   color: #838383;
   font-size: 2.4rem;
-  line-height: 2; }
+  line-height: 2;
+  font-family: 'Lobster', cursive; }
   .experience__title-border {
     display: block;
     margin: 0 auto 30px;
@@ -1045,7 +1050,8 @@ textarea {
   padding-bottom: 20px;
   color: #838383;
   font-size: 2.4rem;
-  line-height: 2; }
+  line-height: 2;
+  font-family: 'Lobster', cursive; }
   .speakerat__title-border {
     display: block;
     margin: 0 auto 30px;
