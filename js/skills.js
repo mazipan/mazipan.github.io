@@ -13,8 +13,8 @@ function setAndAnimateSkills(){
     $('.skills__content-wrapper')
         .children('.skills__item')
         .each(function(index){
-            let progress = $(this).find('.skills__item-progress-fill');
-            let value = progress.attr('data-value');
+            var progress = $(this).find('.skills__item-progress-fill');
+            var value = progress.attr('data-value');
 
             if(value){
                 var elmValue = $(this).find('.skills__item-progress-value');

@@ -9,11 +9,17 @@
     height: 60px;
     background: rgba(255,255,255,.95294);
 
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__brand
     {
-        display: inline-block;
-        float: left;
-        padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: .2em;
 
         img
         {
@@ -21,18 +27,18 @@
             @include border-radius(3px);
         }
     }
+    &__title{
+        margin-left: .5em;
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
     &__nav
     {
-        display: inline-block;
-        float: right;
 
         &--desktop
         {
             display: block;
-
-            li{
-                padding: 17px 0;
-            }
 
             @media screen and (max-width:640px)
             {
@@ -54,9 +60,9 @@
             @include transition(.5s ease-in-out);
 
             position: relative;
-            margin: -5px;
-            width: 60px;
-            height: 45px;
+            margin: .7em;
+            width: 40px;
+            height: 20px;
             cursor: pointer;
 
             span
@@ -79,20 +85,20 @@
                 &:nth-child(2),
                 &:nth-child(3)
                 {
-                    top: 18px;
+                    top: 10px;
                 }
                 &:nth-child(4)
                 {
-                    top: 36px;
+                    top: 20px;
                 }
             }
             &--close
             {
                 span
                 {
-                    &:nth-child(1)
+                    &:nth-child(1), &:nth-child(4)
                     {
-                        top: 18px;
+                        top: 10px;
                         left: 50%;
                         width: 0;
                     }
@@ -103,12 +109,6 @@
                     &:nth-child(3)
                     {
                         @include rotate(-45deg);
-                    }
-                    &:nth-child(4)
-                    {
-                        top: 18px;
-                        left: 50%;
-                        width: 0;
                     }
                 }
             }

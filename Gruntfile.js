@@ -13,7 +13,7 @@ module.exports = function (grunt) {
             sass: {
                 dist: {
                     options:{
-                        sourcemap: 'true',
+                        sourcemap: 'auto',
                         style: 'compact',
                         update: true
                     },
@@ -32,6 +32,58 @@ module.exports = function (grunt) {
                     files: '**/*.scss',
                     tasks: ['sass']
                 }
+            },
+
+            cssmin: {                
+                options:{
+                    sourcemap: true,
+                    shorthandCompacting: true,
+                    keepSpecialComments: 0,    
+                    removeDuplicates: false,   
+                    restructure: true,        
+                    mergeAdjacent: true,
+                    mergeMediaQueries: true
+                },
+                target: {
+                    files: [{
+                         expand: true,
+                         cwd: 'css',
+                         src: ['**/*.css'],
+                         dest: 'css',
+                         ext: '.min.css'
+                    }]
+                }
+            },
+
+            uglify: {  
+                compress: {
+                    sourcemap: true,
+                    sequences: true,
+                    dead_code: true,
+                    conditionals: true,
+                    booleans: true,
+                    unused: true,
+                    if_return: true,
+                    join_vars: true,
+                    drop_console: true,
+                    preserveComments : 'all'
+                },
+                target: {
+                    files:  grunt.file.
+                        expandMapping(
+                        [
+                            'js/*.js',
+                            '!js/*.min.js',
+                        ],
+                        'js/temp',
+                        {
+                            rename: function(destBase, destPath) {
+                                return destBase +'/'+ destPath
+                                        .replace('js/', '/')
+                                        .replace('.js', '.min.js');
+                            }
+                        })
+                }
             }
     });
 
@@ -41,5 +93,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-babel');
 
-    grunt.registerTask('default', ['sass']);
+    grunt.registerTask('default', ['sass', 'cssmin', 'uglify']);
 };
