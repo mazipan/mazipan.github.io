@@ -33,7 +33,6 @@ module.exports = function (grunt) {
                     tasks: ['sass']
                 }
             },
-
             cssmin: {                
                 options:{
                     sourcemap: true,
@@ -54,7 +53,6 @@ module.exports = function (grunt) {
                     }]
                 }
             },
-
             uglify: {  
                 compress: {
                     sourcemap: true,
