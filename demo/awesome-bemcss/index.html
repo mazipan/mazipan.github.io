@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta name="robots" content="index, follow"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>AwesomeBemCSS | Simple CSS Framework Using BEM Methodology</title>
+
+        <meta name="language" content="id-ID"/>
+        <meta name="author" content="Irfan Maulana"/>
+
+        <link rel="author" href="https://plus.google.com/u/0/+irfanmaulana-mazipan/posts"/>
+        <link rel="publisher" href="https://plus.google.com/u/0/+irfanmaulana-mazipan"/>
+
+        <meta property="og:title" content="AwesomeBemCSS" />        
+        <meta property="og:description" content="Simple CSS Framework Using BEM Methodology"/>        
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@maz_ipan"/>
+        <meta name="twitter:creator" content="@maz_ipan"/>
+        <meta name="twitter:title" content="AwesomeBemCSS"/>
+        <meta name="twitter:description" content="Simple CSS Framework Using BEM Methodology"/>
+        
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css"> 
+        <link rel="stylesheet" type="text/css" href="../dist/demo.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body class="site">
+
+  <header role="header" class="site__header header" id="header">
+      <div class="header__wrapper">
+        <div class="header__brand">
+          <img src="./images/brand-blue.png" />
+          <!--
+          <div class="header__title">
+            AwesomeBemCSS
+          </div>
+          -->
+        </div>
+
+        <nav role="nav" class="header__nav">      
+
+          <ul class="tabs">
+            <li class="tabs__item tabs__item--active" data-target="#overview">
+              <a href="#overview">Overview</a>
+            </li>
+            <li class="tabs__item" data-target="#typography">
+              <a href="#typography">Typography</a>
+            </li>
+            <li class="tabs__item" data-target="#grids">
+              <a href="#grids">Grids</a>
+            </li>
+            <li class="tabs__item" data-target="#buttons">
+              <a href="#buttons">Buttons</a>
+            </li>
+            <li class="tabs__item" data-target="#forms">
+              <a href="#forms">Forms</a>
+            </li>
+            <li class="tabs__item" data-target="#table">
+              <a href="#table">Table</a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </div>
+  </header>
+
+  <main role="main" class="site__main main" id="main">
+      <div class="main__title">
+        <h1>AwesomeBemCSS 
+          <small>(demo and cheatsheet)</small>
+        </h1>
+      </div>
+      <nav role="nav" class="main__nav nav" id="nav">
+        <ul class="nav__tabs tabs tabs--vertical">
+            <li class="tabs__itemv tabs__itemv--active" data-target="#overview">
+              <a href="#overview">Overview</a>
+            </li>
+            <li class="tabs__itemv" data-target="#typography">
+              <a href="#typography">Typography</a>
+            </li>
+            <li class="tabs__itemv" data-target="#grids">
+              <a href="#grids">Grids</a>
+            </li>
+            <li class="tabs__itemv" data-target="#buttons">
+              <a href="#buttons">Buttons</a>
+            </li>
+            <li class="tabs__itemv" data-target="#forms">
+              <a href="#forms">Forms</a>
+            </li>
+            <li class="tabs__itemv" data-target="#table">
+              <a href="#table">Table</a>
+            </li>
+        </ul>
+      </nav>
+
+      <article class="main__content content" id="content">
+        <section class="content__overview" id="overview">
+          <h2 class="content__title">Overview</h2>
+          <h4>Blocks, Elements and Modifiers</h4>
+          <p>
+            <strong>Blocks : </strong>Standalone entity that is meaningful on its own.
+            <br>
+            Examples : <code>header</code>, <code>container</code>, <code>menu</code>, <code>checkbox</code>, <code>input</code>
+          </p>
+          <p>
+            <strong>Element : </strong>Parts of a block and have no standalone meaning. They are semantically tied to its block.
+            <br>
+            Examples : <code>menu item</code>, <code>list item</code>, <code>checkbox caption</code>, <code>header title</code>
+          </p>
+          <p>
+            <strong>Modifier : </strong>Flags on blocks or elements. Use them to change appearance or behavior.
+            <br>
+            Examples : <code>disabled</code>, <code>highlighted</code>, <code>checked</code>, <code>fixed</code>, <code>size big</code>, <code>color yellow</code>
+          </p>
+          <p>
+            Further Reading : <a href="http://getbem.com/introduction/">http://getbem.com/introduction/</a> 
+          </p>
+        </section>
+
+        <section class="content__typography" id="typography">
+          <h2 class="content__title">Typography</h2>
+          <div class="content__wrapper">
+            <div class="content__col-sm">              
+              <h4>Heading</h4>
+              <h1>h1</h1>
+              <h2>h2</h2>
+              <h3>h3</h3>
+              <h4>h4</h4>
+              <h5>h5</h5>
+            </div>
+            <div class="content__col-lg">
+                <h4>Paragraph</h4>
+                <p>
+                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit autocomplete Lorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                </p>
+
+                <h4>Blockquote</h4>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                </blockquote>
+
+              </div>
+            </div>
+            <div class="content__col-sm">
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="content__grids" id="grids">
+          <h2 class="content__title">Grids</h2>          
+          <h4>Row And Columns</h4>
+          <div class="content__wrapper grids">
+            <div class="grids__row">row (total col in row = 16)</div>
+            <div class="grids__row">
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+            </div>           
+            <div class="grids__row">
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-2">col-2</div>
+              <div class="grids__col-3">col-3</div>
+              <div class="grids__col-10">col-10</div>
+            </div>
+            <div class="grids__row">
+              <div class="grids__col-offset-1">col-offset-1</div>
+            </div>
+            <div class="grids__row">
+              <div class="grids__col-offset-2">col-offset-2</div>
+            </div>
+            <div class="grids__row">
+              <div class="grids__col-offset-3">col-offset-3</div>
+            </div>
+          </div>
+
+          <h4>Flex Box</h4>
+          <div class="content__wrapper">            
+            <div class="grids__flex">
+              <div class="grids__item">div in flex box</div>
+              <div class="grids__item">div in flex box</div>
+              <div class="grids__item">div in flex box</div>
+              <div class="grids__item">div in flex box</div>
+            </div>
+            <div class="grids__flex">
+              <div class="grids__item">div in flex box</div>
+              <div class="grids__item">div in flex box</div>
+              <div class="grids__item">div in flex box</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content__buttons" id="buttons">
+          <h2 class="content__title">Buttons</h2>
+          <h4>Button</h4>
+          <div class="content__wrapper">
+            <button class="button button--green">button--green</button>
+            <button class="button button--red">button--red</button>
+            <button class="button button--blue">button--blue</button>
+            <button class="button button--orange">button--orange</button>
+            <button class="button button--gray">button--gray</button>
+          </div>
+
+          <h4>Button Link</h4>
+          <div class="content__wrapper">
+            <a href="javascript:void(0)" class="button button--green">button--green</a>
+            <a href="javascript:void(0)" class="button button--red">button--red</a>
+            <a href="javascript:void(0)" class="button button--blue">button--blue</a>
+            <a href="javascript:void(0)" class="button button--orange">button--orange</a>
+            <a href="javascript:void(0)" class="button button--gray">button--gray</a>
+          </div>
+
+          <h4>Buttons Outline</h4>
+          <div class="content__wrapper">
+            <button class="button button-outline--green">button-outline--green</button>
+            <button class="button button-outline--red">button-outline--red</button>
+            <button class="button button-outline--blue">button-outline--blue</button>
+            <button class="button button-outline--orange">button-outline--orange</button>
+            <button class="button button-outline--gray">button-outline--gray</button>
+          </div>
+
+          <h4>Button Radius</h4>
+          <div class="content__wrapper">
+            <button class="button button-radius--green">button-radius--green</button>
+            <button class="button button-radius--red">button-radius--red</button>
+            <button class="button button-radius--blue">button-radius--blue</button>
+            <button class="button button-radius--orange">button-radius--orange</button>
+            <button class="button button-radius--gray">button-radius--gray</button>
+          </div>
+
+          <h4>Buttons Dropdown</h4>
+          <div class="content__wrapper">
+            <button class="button button--dropdown button--green">
+              <i class="fa fa-cog"></i>    
+
+              <ul class="button__menu" role="menu">
+                <li><a href="#">25</a></li>
+                <li><a href="#">50</a></li>
+                <li><a href="#">100</a></li>
+              </ul>         
+            </button>
+            <button class="button button--dropdown button--red">
+              <i class="fa fa-cog"></i>    
+
+              <ul class="button__menu" role="menu">
+                <li><a href="#">25</a></li>
+                <li><a href="#">50</a></li>
+                <li><a href="#">100</a></li>
+              </ul>
+            </button>
+            <button class="button button--dropdown button--blue">
+              <i class="fa fa-cog"></i>    
+              
+              <ul class="button__menu" role="menu">
+                <li><a href="#">25</a></li>
+                <li><a href="#">50</a></li>
+                <li><a href="#">100</a></li>
+              </ul>
+            </button>
+            <button class="button button--dropdown button--orange">
+              <i class="fa fa-cog"></i>    
+
+              <ul class="button__menu" role="menu">
+                <li><a href="#">25</a></li>
+                <li><a href="#">50</a></li>
+                <li><a href="#">100</a></li>
+              </ul>
+            </button>
+            <button class="button button--dropdown button--gray">
+              <i class="fa fa-cog"></i>    
+              
+              <ul class="button__menu" role="menu">
+                <li><a href="#">25</a></li>
+                <li><a href="#">50</a></li>
+                <li><a href="#">100</a></li>
+              </ul>
+            </button>
+          </div>
+        </section>
+
+        <section class="content__forms" id="forms">
+          <h2 class="content__title">Forms</h2>
+          <h4>Textfield</h4>
+          <div class="content__wrapper">
+            <input class="textfield" id="textfield-1" placeholder="textfield" />
+            <span class="textfield__helper">This is helper text<span>
+            <input class="textfield textfield--error" id="textfield-2" placeholder="textfield textfield--error"/>
+            <span class="textfield__error">This is helper error message<span>
+            <input class="textfield textfield--radius" id="textfield-3" placeholder="textfield textfield--radius"/>
+            <input class="textfield textfield--radius textfield--error" id="textfield-4" placeholder="textfield textfield--radius textfield--error"/>
+            <input class="textfield textfield--large" id="textfield-4" placeholder="textfield textfield--large" />
+          </div>
+
+          <h4>Text Area</h4>
+          <div class="content__wrapper">
+            <textarea class="textfield" id="textarea-1" rows="3" placeholder="textfield" ></textarea>
+            <span class="textfield__helper">This is helper text<span>
+            <textarea class="textfield textfield--error" rows="3" id="textarea-2" placeholder="textfield textfield--error"></textarea>
+            <span class="textfield__error">This is helper error message<span>
+            <textarea class="textfield textfield--radius" rows="3" id="textarea-3" placeholder="textfield textfield--radius"></textarea>
+            <textarea class="textfield textfield--radius textfield--error" rows="3" id="textfield-4" placeholder="textfield textfield--radius textfield--error"></textarea>
+            <textarea class="textfield textfield--large" rows="3" id="textarea-4" placeholder="textfield textfield--large" ></textarea>
+          </div>
+
+          <h4>Input Select Box</h4>
+          <div class="content__wrapper">
+            <select class="select" id="select_box-1">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <select class="select select--radius" id="select_box-2">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <select multiple class="select" id="select_box-3">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <select multiple class="select select--radius" id="select_box-4">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+
+          <h4>Checkboxes</h4>
+          <div class="content__wrapper">
+            <input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/>
+            <label for="checkbox-1">Check 1</label>
+            <input class="checkbox" type="checkbox" id="checkbox-2" name"checkbox"/>
+            <label for="checkbox-2">Check 2</label>
+            <input class="checkbox" type="checkbox" id="checkbox-3" name"checkbox"/>
+            <label for="checkbox-3">Check 3</label>
+          </div>
+
+          <h4>Radio</h4>
+          <div class="content__wrapper">
+            <input class="radio" type="radio" id="radio-1" name="radio"/>
+            <label for="radio-1">Yes</label>
+            <input class="radio" type="radio" id="radio-2" name="radio"/>
+            <label for="radio-2">No</label>     
+          </div>
+          <div class="content__wrapper">
+            <input class="radio radio--blue" type="radio" id="radio-3" name="radio-blue"/>
+            <label for="radio-3">Yes</label>
+            <input class="radio radio--blue" type="radio" id="radio-4" name="radio-blue"/>
+            <label for="radio-4">No</label>       
+          </div>
+
+        </section>
+
+        <section class="content__table" id="table">
+          <h2 class="content__title">Table</h2>
+          <div class="content__wrapper">              
+              
+              <h4>Table</h4>  
+              <table class="table"> 
+                <thead class="table__head"> 
+                  <tr> 
+                    <th class="table__sort--asc" sortable="true">#</th> 
+                    <th class="table__sort--desc" sortable="true">First Name</th> 
+                    <th>Last Name</th> 
+                    <th>Username</th> 
+                  </tr> 
+                </thead> 
+                <tbody class="table__body"> 
+                  <tr> 
+                    <td>1</td> 
+                    <td>Mark</td> 
+                    <td>Otto</td> 
+                    <td>@mdo</td>
+                  </tr> 
+                  <tr> 
+                    <td>2</td> 
+                    <td>Jacob</td> 
+                    <td>Thornton</td> 
+                    <td>@fat</td> 
+                  </tr> 
+                  <tr> 
+                    <td>3</td> 
+                    <td>Larry</td> 
+                    <td>the Bird</td> 
+                    <td>@twitter</td> 
+                  </tr> 
+                </tbody> 
+              </table>      
+
+
+              <h4>Pagination</h4>   
+              <ul class="pager"> 
+                <li> 
+                  <a href="javascript:void(0)" class="pager__page">Previous</a> 
+                </li> 
+                <li>
+                  <a href="javascript:void(0)" class="pager__page">1</a>
+                </li> 
+                <li>
+                  <a href="javascript:void(0)" class="pager__page">2</a>
+                </li> 
+                <li>
+                  <a href="javascript:void(0)" class="pager__page">3</a>
+                </li> 
+                <li>
+                  <a href="javascript:void(0)" class="pager__page">4</a>
+                </li> 
+                <li>
+                  <a href="javascript:void(0)" class="pager__page">5</a>
+                </li> 
+                <li> 
+                  <a href="javascript:void(0)" class="pager__page">Next</a> 
+                </li> 
+              </ul> 
+
+              <ul class="pager pager--radius"> 
+                <li> 
+                  <a href="javascript:void(0)" class="pager__page">Previous</a> 
+                </li> 
+                <li>
+                  <a href="javascript:void(0)" class="pager__page">1</a>
+                </li> 
+                <li>
+                  <a href="javascript:void(0)" class="pager__page">2</a>
+                </li> 
+                <li>
+                  <a href="javascript:void(0)" class="pager__page">3</a>
+                </li> 
+                <li>
+                  <a href="javascript:void(0)" class="pager__page">4</a>
+                </li> 
+                <li>
+                  <a href="javascript:void(0)" class="pager__page">5</a>
+                </li> 
+                <li> 
+                  <a href="javascript:void(0)" class="pager__page">Next</a> 
+                </li> 
+              </ul> 
+              
+          </div>
+        </section>
+
+      </article>
+  </main>
+
+  <footer role="footer" class="site__footer footer" id="footer">
+    <div class="footer__wrapper">
+
+      <div class="footer__text">
+        <span>Crafted with &nbsp;<i class="fa fa-heart-o"></i>&nbsp; by Irfan Maulana</span>
+      </div>
+
+      <ul class="footer__list">
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://www.facebook.com/mazipanneh">
+            <i class="fa fa-facebook-official"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://twitter.com/Maz_Ipan">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://instagram.com/maz_ipan">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://id.linkedin.com/in/irfanmaulanamazipan">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://www.slideshare.net/IrfanMaulana21">
+            <i class="fa fa-slideshare"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://github.com/mazipan">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://mazipanneh.wordpress.com/">
+            <i class="fa fa-wordpress"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer__text">
+        <span>Copyright © 2016</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./libs/jquery.min.js"></script>
+  <script src="../src/awesome-bemcss.js"></script>
+
+</body>
+</html>
