@@ -9,7 +9,20 @@ module.exports = function (grunt) {
     // Project configuration.
     grunt.initConfig({        
         pkg: grunt.file.readJSON('package.json'),
-            // SASS for compile scss into css
+            
+            concurrent: {
+                target1: ['clean'],
+                target2: ['sass'],
+                target3: ['cssmin'],
+                target4: ['uglify']
+            },
+
+            clean: {
+              build: {
+                src: ['css']
+              }
+            },
+
             sass: {
                 dist: {
                     options:{
@@ -27,12 +40,7 @@ module.exports = function (grunt) {
 
                 }
             },
-            watch: {
-                css: {
-                    files: '**/*.scss',
-                    tasks: ['sass']
-                }
-            },
+
             cssmin: {                
                 options:{
                     sourcemap: true,
@@ -53,6 +61,7 @@ module.exports = function (grunt) {
                     }]
                 }
             },
+
             uglify: {  
                 compress: {
                     sourcemap: true,
@@ -82,14 +91,28 @@ module.exports = function (grunt) {
                             }
                         })
                 }
+            },
+
+            watch: {
+                css: {
+                    files: '**/*.scss',
+                    tasks: ['sass']
+                }
             }
     });
 
+    grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-babel');
-
-    grunt.registerTask('default', ['sass', 'cssmin', 'uglify']);
+    
+    grunt.registerTask('default',
+            [
+                'concurrent:target1',
+                'concurrent:target2',
+                'concurrent:target3',
+                'concurrent:target4'
+            ]);
 };
