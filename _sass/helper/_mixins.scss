@@ -201,3 +201,9 @@
          -o-background-size: $size;
             background-size: $size;
 }
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

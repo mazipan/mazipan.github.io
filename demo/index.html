@@ -26,8 +26,12 @@
         <link rel="stylesheet" type="text/css" href="../css/site.min.css">
         <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <style>
+          .header__title{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-style: normal;
+          }
+        </style>
       
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -45,10 +49,13 @@
   <header role="header" class="site__header header" id="home">
       <div class="header__wrapper">
         <div class="header__brand">
-          <img src="../images/irfan-maulana.jpg" alt="Irfan Maulana" title="Irfan Maulana"/>
+        
+          <a href="https://mazipan.github.io/">
+            <img src="../images/irfan-maulana.jpg" alt="Irfan Maulana" title="Irfan Maulana"/>
+          </a>
 
           <div class="header__title">
-            Irfan Maulana
+            Irfan Maulana | Demo
           </div>
         </div>
       </div>
@@ -56,13 +63,13 @@
 
   <main role="main" class="site__main main">
     <article class="main__wrapper">   
-      <section class="main__about about" id="about">
-        <div class="about__wrapper">
-          <div class="about__title">
-            <span>This is list of my demo</span>
-            <span class="about__title-border"></span>
+
+      <section class="main__demo demo">
+        <div class="demo__wrapper">
+          <div class="demo__title">
+            <span>Demo</span>
           </div>
-          <div class="about__content">
+          <div class="demo__item">
             <ul>
               <li>
                   <a href="https://mazipan.github.io/demo/awesome-bemcss/">Awesome-BemCSS</a>
@@ -71,6 +78,49 @@
           </div>
         </div>
       </section>
+
+      <section class="main__demo demo">
+        <div class="demo__wrapper">
+          <div class="demo__title">
+            <span>Ebook</span>
+          </div>
+          <div class="demo__item">
+            <ul>
+              <li>
+                  <a href="#">Sencha ExtJS Guide for Beginner : Bahasa Indonesia</a>
+              </li>
+              <li>
+                  <a href="#">Mengembangkan CSS Framework Sendiri : Bahasa Indonesia</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__demo demo">
+        <div class="demo__wrapper">
+          <div class="demo__title">
+            <span>Silde Presentation</span>
+          </div>
+          <div class="demo__item">
+            <ul>
+              <li>
+                  <a
+                    href="http://www.slideshare.net/IrfanMaulana21/php-indonesia-understanding-ui-ux-from-developer-side">
+                    Understanding UI & UX from Developer Side
+                  </a>
+              </li>
+              <li>
+                  <a href="http://www.slideshare.net/IrfanMaulana21/">How I Learn Javascript from Basic</a>
+              </li>
+              <li>
+                  <a href="http://www.slideshare.net/IrfanMaulana21/">NodeJS Web Development</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
     </article>
   </main>
 
@@ -85,7 +135,7 @@
       <ul class="footer__list">
         <li class="footer__icon footer__icon--facebook">
           <a rel="nofollow" href="https://www.facebook.com/mazipanneh">
-            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-facebook-square"></i>
           </a>
         </li>
         <li class="footer__icon footer__icon--twitter">

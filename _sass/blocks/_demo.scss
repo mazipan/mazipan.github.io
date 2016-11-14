@@ -1,0 +1,46 @@
+.demo
+{
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+    &__wrapper
+    {
+        text-align: left;
+    }
+    &__title
+    {
+        padding-bottom: 20px;
+        color: $greyDarker;
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+    &__item
+    {
+        width: 100%;
+        text-align: left;
+
+        ul
+        {
+            margin: 0;
+            padding: 0 0 0 25px;
+            list-style: circle;
+
+            li
+            {
+                padding: 5px;
+                font-size: 1rem;
+
+                a
+                {
+                    color: $blue;
+                    text-decoration: none;
+
+                    &:hover
+                    {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
