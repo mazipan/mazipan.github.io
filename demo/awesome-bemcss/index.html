@@ -38,6 +38,7 @@
 
         <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./demo.min.css">
+        <link rel="stylesheet" type="text/css" href="./awesome-bemcss.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <script>
@@ -196,39 +197,39 @@
         <section class="content__grids" id="grids">
           <h2 class="content__title">Grids</h2>          
           <h4>Row And Columns</h4>
-          <div class="content__wrapper grids">
-            <div class="grids__row">row (total col in row = 16)</div>
-            <div class="grids__row">
-              <div class="grids__col-16">col-16</div>
+          <div class="content__wrapper grid">
+            <div class="grid__row">row (total col in row = 16)</div>
+            <div class="grid__row">
+              <div class="grid__col-16">col-16</div>
             </div>           
-            <div class="grids__row">
-              <div class="grids__col-3">col-3</div>
-              <div class="grids__col-3">col-3</div>
-              <div class="grids__col-10">col-10</div>
+            <div class="grid__row">
+              <div class="grid__col-3">col-3</div>
+              <div class="grid__col-3">col-3</div>
+              <div class="grid__col-10">col-10</div>
             </div>
-            <div class="grids__row">
-              <div class="grids__col-offset-1">col-offset-1</div>
+            <div class="grid__row">
+              <div class="grid__col-offset-1">col-offset-1</div>
             </div>
-            <div class="grids__row">
-              <div class="grids__col-offset-2">col-offset-2</div>
+            <div class="grid__row">
+              <div class="grid__col-offset-2">col-offset-2</div>
             </div>
-            <div class="grids__row">
-              <div class="grids__col-offset-3">col-offset-3</div>
+            <div class="grid__row">
+              <div class="grid__col-offset-3">col-offset-3</div>
             </div>
           </div>
 
           <h4>Flex Box</h4>
           <div class="content__wrapper">            
-            <div class="grids__flex">
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
+            <div class="grid__flex">
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
             </div>
-            <div class="grids__flex">
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
+            <div class="grid__flex">
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
             </div>
           </div>
         </section>
@@ -264,11 +265,11 @@
 
           <h4>Button Radius</h4>
           <div class="content__wrapper">
-            <button class="button button-radius--green">button-radius--green</button>
-            <button class="button button-radius--red">button-radius--red</button>
-            <button class="button button-radius--blue">button-radius--blue</button>
-            <button class="button button-radius--orange">button-radius--orange</button>
-            <button class="button button-radius--gray">button-radius--gray</button>
+            <button class="button button--radius button--green">button-radius--green</button>
+            <button class="button button--radius button--red">button-radius--red</button>
+            <button class="button button--radius button--blue">button-radius--blue</button>
+            <button class="button button--radius button--orange">button-radius--orange</button>
+            <button class="button button--radius button--gray">button-radius--gray</button>
           </div>
 
           <h4>Buttons Dropdown</h4>
@@ -443,26 +444,81 @@
           <div class="content__wrapper">
             <div class="alert alert--radius alert--green">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--green
             </div>                
             <div class="alert alert--radius alert--red">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--red
             </div> 
             <div class="alert alert--radius alert--blue">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--blue
             </div>    
             <div class="alert alert--radius alert--orange">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--orange
             </div>    
             <div class="alert alert--radius alert--gray">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--gray
             </div>         
           </div>
 
+          <h4>Popover</h4>
+          <div class="content__wrapper">
+            <div class="popover">
+              <span>Hover Me, I am popover !</span>
+              <div class="popover__content">
+                Hello, I am popover__content !
+              </div>
+            </div>            
+          </div>
+
+        </section>
+
+        <section class="content__card" id="card">
+          <h2 class="content__title">Card</h2>
+          <div class="content__wrapper"> 
+              <div class="card">card</div>
+              <div class="card">card</div>
+              <div class="card">card</div>
+          </div>
+          <div class="content__wrapper"> 
+              <div class="card card--radius">card card--radius</div>
+              <div class="card card--radius">card card--radius</div>
+              <div class="card card--radius">card card--radius</div>
+          </div>
+        </section>
+
+        <section class="content__card" id="modal">
+          <h2 class="content__title">Modal</h2>
+          <div class="content__wrapper"> 
+
+            <button id="myBtn" 
+                    class="button button--blue" 
+                    data-modal="myModal">
+
+              Open Modal
+              
+            </button>
+
+            <div id="myModal" class="modal" role="modal">
+              <div class="modal__content">
+                <div class="modal__header">
+                  <span class="modal__close">×</span>
+                  <h2>Modal Header</h2>
+                </div>
+                <div class="modal__body">
+                  <p>Some text in the Modal Body</p>
+                  <p>Some other text...</p>
+                </div>
+                <div class="modal__footer">
+                  <h3>Modal Footer</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </section>
 
         <section class="content__table" id="table">
