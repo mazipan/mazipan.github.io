@@ -14,12 +14,13 @@ module.exports = function (grunt) {
                 target1: ['clean'],
                 target2: ['sass'],
                 target3: ['cssmin'],
-                target4: ['uglify']
+                target4: ['concat'],
+                target5: ['uglify']
             },
 
             clean: {
               build: {
-                src: ['css']
+                src: ['build', 'css', 'js/temp']
               }
             },
 
@@ -34,7 +35,7 @@ module.exports = function (grunt) {
                         expand: true,
                         cwd:  '_sass',
                         src:  ['**/*.scss'],
-                        dest: 'css',
+                        dest: 'build',
                         ext:  '.css'
                     }]                            
 
@@ -54,12 +55,36 @@ module.exports = function (grunt) {
                 target: {
                     files: [{
                          expand: true,
-                         cwd: 'css',
+                         cwd: 'build',
                          src: ['**/*.css'],
-                         dest: 'css',
+                         dest: 'build/dist',
                          ext: '.min.css'
                     }]
                 }
+            },
+
+            concat: {
+                options: {
+                    preserveComments : 'all',
+                    stripBanners: {
+                        block : 'all'
+                    }
+                },
+                basic_and_extras: {
+                    files: {      
+                        'build/main.js':
+                            [
+                                "js/libs/jquery.min.js",
+                                "js/libs/jquery.isotope.min.js",
+                                "js/libs/jquery.inview.min.js",
+                                "js/libs/responsiveslides.min.js",
+                                "js/offcanvas.js",
+                                "js/swiper.js",
+                                "js/portofolio.js",
+                                "js/skills.js"
+                            ]
+                    }
+                },
             },
 
             uglify: {  
@@ -79,15 +104,17 @@ module.exports = function (grunt) {
                     files:  grunt.file.
                         expandMapping(
                         [
-                            'js/*.js',
-                            '!js/*.min.js',
+                            'build/*.js',
+                            '!build/*.min.js',
                         ],
-                        'js/temp',
+                        'build',
                         {
                             rename: function(destBase, destPath) {
-                                return destBase +'/'+ destPath
-                                        .replace('js/', '/')
-                                        .replace('.js', '.min.js');
+                                var result = destBase +'/'+ destPath
+                                    .replace('build/', 'dist/')
+                                    .replace('.js', '.min.js');
+
+                                return result;
                             }
                         })
                 }
@@ -104,8 +131,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-sass');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     
     grunt.registerTask('default',
@@ -113,6 +141,7 @@ module.exports = function (grunt) {
                 'concurrent:target1',
                 'concurrent:target2',
                 'concurrent:target3',
-                'concurrent:target4'
+                'concurrent:target4',
+                'concurrent:target5'
             ]);
 };
