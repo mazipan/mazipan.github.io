@@ -92,13 +92,13 @@
   			<nav role="nav" class="header__nav">
 
   				<ul class="header__nav--desktop">
-  					<li><a href="#home">Home</a></li>
-  					<li><a href="#about">About</a></li>
-  					<li><a href="#portofolio">Portofolio</a></li>
-            <li><a href="#experience">Experience</a></li>
-  					<li><a href="#skills">Skills</a></li>
-            <li><a href="#speakerat">Speaker At</a></li>
-            <li><a href="/demo">Demo</a></li>
+  					<li><a href="#home" onclick="_trackClick('cv home')">Home</a></li>
+  					<li><a href="#about" onclick="_trackClick('cv about')">About</a></li>
+  					<li><a href="#portofolio" onclick="_trackClick('cv portofolio')">Portofolio</a></li>
+            <li><a href="#experience"onclick="_trackClick('cv experience')">Experience</a></li>
+  					<li><a href="#skills" onclick="_trackClick('cv skills')">Skills</a></li>
+            <li><a href="#speakerat" onclick="_trackClick('cv speakerat')">Speaker At</a></li>
+            <li><a href="/demo" onclick="_trackClick('cv demo')">Demo</a></li>
   				</ul>
 
           <div class="header__nav--mobile">
@@ -118,13 +118,13 @@
   <aside role="aside" class="site__offcanvas offcanvas offcanvas--animated">
     <div class="offcanvas__overlay"></div>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portofolio">Portofolio</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#speakerat">Speaker At</a></li>
-      <li><a href="/demo">Demo</a></li>
+      <li><a href="#home" onclick="_trackClick('cv home')">Home</a></li>
+      <li><a href="#about" onclick="_trackClick('cv about')">About</a></li>
+      <li><a href="#portofolio" onclick="_trackClick('cv portofolio')">Portofolio</a></li>
+      <li><a href="#experience"onclick="_trackClick('cv experience')">Experience</a></li>
+      <li><a href="#skills" onclick="_trackClick('cv skills')">Skills</a></li>
+      <li><a href="#speakerat" onclick="_trackClick('cv speakerat')">Speaker At</a></li>
+      <li><a href="/demo" onclick="_trackClick('cv demo')">Demo</a></li>
     </ul>
   </aside>
 
@@ -764,8 +764,19 @@
   	</div>
   </footer>
 
+<script>
+    function _trackClick(linkClick){
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Link',
+          eventAction: 'click',
+          eventLabel: linkClick
+        });
+      }    
+  </script>
   <script src="./build/dist/main.min.js"></script>
   <script src="https://use.fontawesome.com/89344806bd.js"></script>
+
 
 </body>
 </html>
