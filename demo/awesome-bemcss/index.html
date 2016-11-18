@@ -39,7 +39,7 @@
         <link rel="stylesheet" type="text/css" href="../../build/dist/prism.min.css">
         <link rel="stylesheet" type="text/css" href="./demo.min.css">
         <link rel="stylesheet" type="text/css" href="./awesome-bemcss.min.css">
-        
+
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <script>
@@ -1067,6 +1067,16 @@
   <script src="./awesome-bemcss.min.js"></script>
   <script src="../../js/libs/prism.min.js"></script>
   <script src="https://use.fontawesome.com/89344806bd.js"></script>
+  <script>
+    function _trackClick(linkClick){
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Link',
+          eventAction: 'click',
+          eventLabel: linkClick
+        });
+      }    
+  </script>
 
 </body>
 </html>
