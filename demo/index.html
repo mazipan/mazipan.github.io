@@ -71,7 +71,7 @@
           <div class="demo__item">
             <ul>
               <li>
-                  <a href="https://mazipan.github.io/demo/awesome-bemcss/" onclick="_trackClick('demo awesome-bemcss')">Awesome-BemCSS</a>
+                  <a href="https://mazipan.github.io/demo/awesome-bemcss/" onclick="_trackLink('demo awesome-bemcss', 'demo', 'visit')">Awesome-BemCSS</a>
               </li>
             </ul>
           </div>
@@ -86,10 +86,10 @@
           <div class="demo__item">
             <ul>
               <li>
-                  <a href="https://dl.dropboxusercontent.com/u/56771947/EbookSenchaExtJSGuideForBeginner.pdf" onclick="_trackClick('ebook sencha-guide')">Sencha ExtJS Guide for Beginner : Bahasa Indonesia</a>
+                  <a href="https://dl.dropboxusercontent.com/u/56771947/EbookSenchaExtJSGuideForBeginner.pdf" onclick="_trackLink('ebook sencha-guide', 'ebook', 'download')">Sencha ExtJS Guide for Beginner : Bahasa Indonesia</a>
               </li>
               <li>
-                  <a href="https://dl.dropboxusercontent.com/u/56771947/ebook-mengembangkan-css-framework-sendiri.pdf" onclick="_trackClick('ebook css-framework')">Mengembangkan CSS Framework Sendiri : Bahasa Indonesia</a>
+                  <a href="https://dl.dropboxusercontent.com/u/56771947/ebook-mengembangkan-css-framework-sendiri.pdf" onclick="_trackLink('ebook css-framework', 'ebook', 'download')">Mengembangkan CSS Framework Sendiri : Bahasa Indonesia</a>
               </li>
             </ul>
           </div>
@@ -105,36 +105,36 @@
             <ul>
               <li>
                   <a
-                    href="http://www.slideshare.net/IrfanMaulana21/sencha-ext-js-overview-part-1-layout-and-container-in-extjs" onclick="_trackClick('slide extjs 1')">
+                    href="http://www.slideshare.net/IrfanMaulana21/sencha-ext-js-overview-part-1-layout-and-container-in-extjs" onclick="_trackLink('slide extjs 1', 'slide', 'visit')">
                     Sencha ExtJs Learning Part 1 - Layout And Container in Sencha ExtJs - By Irfan Maulana [ENGLISH]
                   </a>
               </li>
               <li>
                   <a
-                    href="http://www.slideshare.net/IrfanMaulana21/sencha-ext-js-learning-part-2-mvc-and-mvvm-architecture-in-extjs-english" onclick="_trackClick('slide extjs 2')">
+                    href="http://www.slideshare.net/IrfanMaulana21/sencha-ext-js-learning-part-2-mvc-and-mvvm-architecture-in-extjs-english" onclick="_trackLink('slide extjs 2', 'slide', 'visit')">
                     Sencha ExtJs Learning Part 2 - MVC And MVVM Architecture in ExtJs [ENGLISH]
                   </a>
               </li>
               <li>
                   <a
-                    href="http://www.slideshare.net/IrfanMaulana21/php-indonesia-nodejs-web-development" onclick="_trackClick('slide nodejs web')">
+                    href="http://www.slideshare.net/IrfanMaulana21/php-indonesia-nodejs-web-development" onclick="_trackLink('slide nodejs web', 'slide', 'visit')">
                     Nodejs Web Development
                   </a>
               </li>
               <li>
-                  <a href="http://www.slideshare.net/IrfanMaulana21/jakartajs-how-i-learn-javascript-from-basic" onclick="_trackClick('slide learn js')">How I Learn Javascript from Basic</a>
+                  <a href="http://www.slideshare.net/IrfanMaulana21/jakartajs-how-i-learn-javascript-from-basic" onclick="_trackLink('slide learn js', 'slide', 'visit')">How I Learn Javascript from Basic</a>
               </li>
               <li>
                   <a
-                    href="http://www.slideshare.net/IrfanMaulana21/php-indonesia-understanding-ui-ux-from-developer-side" onclick="_trackClick('slide ui ux')">
+                    href="http://www.slideshare.net/IrfanMaulana21/php-indonesia-understanding-ui-ux-from-developer-side" onclick="_trackLink('slide ui ux', 'slide', 'visit')">
                     Understanding UI & UX from Developer Side
                   </a>
               </li>
               <li>
-                  <a href="http://www.slideshare.net/IrfanMaulana21/bliblidotcom-reintroduction-bem-css" onclick="_trackClick('slide bem css')">Bliblidotcom - Reintroduction BEM CSS</a>
+                  <a href="http://www.slideshare.net/IrfanMaulana21/bliblidotcom-reintroduction-bem-css" onclick="_trackLink('slide bem css', 'slide', 'visit')">Bliblidotcom - Reintroduction BEM CSS</a>
               </li>
               <li>
-                  <a href="http://www.slideshare.net/IrfanMaulana21/" onclick="_trackClick('slide other')">Check other slides here</a>
+                  <a href="http://www.slideshare.net/IrfanMaulana21/" onclick="_trackLink('slide other', 'slide', 'visit')">Check other slides here</a>
               </li>
             </ul>
           </div>
@@ -193,11 +193,13 @@
   </footer>
 
   <script>
-    function _trackClick(linkClick){
+    function _trackLink(linkClick, category, action){
+        if(!category) category = 'Link';
+        if(!action) action = 'click';
         ga('send', {
           hitType: 'event',
-          eventCategory: 'Link',
-          eventAction: 'click',
+          eventCategory: category,
+          eventAction: action,
           eventLabel: linkClick
         });
       }    

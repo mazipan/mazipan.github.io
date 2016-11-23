@@ -2,8 +2,9 @@ $(document).ready(function () {
 
     $('.skills__content-wrapper')
         .bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+            if(_trackClick)  _trackClick('cv skills', 'portofolio', 'scroll'); 
             setAndAnimateSkills();
-            $('.skills__content-wrapper').off('inview');
+            $('.skills__content-wrapper').off('inview');          
     });
         
 

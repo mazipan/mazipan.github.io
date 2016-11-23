@@ -92,13 +92,13 @@
   			<nav role="nav" class="header__nav">
 
   				<ul class="header__nav--desktop">
-  					<li><a href="#home" onclick="_trackClick('cv home')">Home</a></li>
-  					<li><a href="#about" onclick="_trackClick('cv about')">About</a></li>
-  					<li><a href="#portofolio" onclick="_trackClick('cv portofolio')">Portofolio</a></li>
-            <li><a href="#experience"onclick="_trackClick('cv experience')">Experience</a></li>
-  					<li><a href="#skills" onclick="_trackClick('cv skills')">Skills</a></li>
-            <li><a href="#speakerat" onclick="_trackClick('cv speakerat')">Speaker At</a></li>
-            <li><a href="/demo" onclick="_trackClick('cv demo')">Demo</a></li>
+  					<li><a href="#home" onclick="_trackClick('cv home desktop', 'portofolio', 'view')">Home</a></li>
+  					<li><a href="#about" onclick="_trackClick('cv about desktop', 'portofolio', 'view')">About</a></li>
+  					<li><a href="#portofolio" onclick="_trackClick('cv portofolio desktop', 'portofolio', 'view')">Portofolio</a></li>
+            <li><a href="#experience"onclick="_trackClick('cv experience desktop', 'portofolio', 'view')">Experience</a></li>
+  					<li><a href="#skills" onclick="_trackClick('cv skills desktop', 'portofolio', 'view')">Skills</a></li>
+            <li><a href="#speakerat" onclick="_trackClick('cv speakerat desktop')">Speaker At</a></li>
+            <li><a href="/demo" onclick="_trackClick('cv demo desktop', 'portofolio', 'view')">Demo</a></li>
   				</ul>
 
           <div class="header__nav--mobile">
@@ -118,13 +118,13 @@
   <aside role="aside" class="site__offcanvas offcanvas offcanvas--animated">
     <div class="offcanvas__overlay"></div>
     <ul>
-      <li><a href="#home" onclick="_trackClick('cv home')">Home</a></li>
-      <li><a href="#about" onclick="_trackClick('cv about')">About</a></li>
-      <li><a href="#portofolio" onclick="_trackClick('cv portofolio')">Portofolio</a></li>
-      <li><a href="#experience"onclick="_trackClick('cv experience')">Experience</a></li>
-      <li><a href="#skills" onclick="_trackClick('cv skills')">Skills</a></li>
-      <li><a href="#speakerat" onclick="_trackClick('cv speakerat')">Speaker At</a></li>
-      <li><a href="/demo" onclick="_trackClick('cv demo')">Demo</a></li>
+      <li><a href="#home" onclick="_trackClick('cv home mobile', 'portofolio', 'view')">Home</a></li>
+      <li><a href="#about" onclick="_trackClick('cv about mobile', 'portofolio', 'view')">About</a></li>
+      <li><a href="#portofolio" onclick="_trackClick('cv portofolio mobile', 'portofolio', 'view')">Portofolio</a></li>
+      <li><a href="#experience"onclick="_trackClick('cv experience mobile', 'portofolio', 'view')">Experience</a></li>
+      <li><a href="#skills" onclick="_trackClick('cv skills mobile', 'portofolio', 'view')">Skills</a></li>
+      <li><a href="#speakerat" onclick="_trackClick('cv speakerat mobile')">Speaker At</a></li>
+      <li><a href="/demo" onclick="_trackClick('cv demo mobile', 'portofolio', 'view')">Demo</a></li>
     </ul>
   </aside>
 
@@ -261,16 +261,16 @@
 
               <div class="portofolio__content">
                 <div class="portofolio__tab">
-                  <div class="portofolio__tab-item portofolio__tab-item--active" data-filter="*">
+                  <div class="portofolio__tab-item portofolio__tab-item--active" data-filter="*" onclick="_trackClick('cv portofolio all', 'portofolio', 'view')">
                     ALL
                   </div>
-                  <div class="portofolio__tab-item" data-filter=".portofolio__box-item--web">
+                  <div class="portofolio__tab-item" data-filter=".portofolio__box-item--web" onclick="_trackClick('cv portofolio web', 'portofolio', 'view')">
                     WEB
                   </div>
-                  <div class="portofolio__tab-item" data-filter=".portofolio__box-item--desktop">
+                  <div class="portofolio__tab-item" data-filter=".portofolio__box-item--desktop" onclick="_trackClick('cv portofolio desktop', 'portofolio', 'view')">
                     DESKTOP
                   </div>
-                  <div class="portofolio__tab-item" data-filter=".portofolio__box-item--mockup">
+                  <div class="portofolio__tab-item" data-filter=".portofolio__box-item--mockup" onclick="_trackClick('cv portofolio mockup', 'portofolio', 'view')">
                     MOCKUP
                   </div>
                 </div>
@@ -764,15 +764,17 @@
   	</div>
   </footer>
 
-<script>
-    function _trackClick(linkClick){
+  <script>
+    function _trackLink(linkClick, category, action){
+        if(!category) category = 'Link';
+        if(!action) action = 'click';
         ga('send', {
           hitType: 'event',
-          eventCategory: 'Link',
-          eventAction: 'click',
+          eventCategory: category,
+          eventAction: action,
           eventLabel: linkClick
         });
-      }    
+      }   
   </script>
   <script src="./build/dist/main.min.js"></script>
   <script src="https://use.fontawesome.com/89344806bd.js"></script>
