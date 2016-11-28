@@ -1,0 +1,26 @@
+
+@import 'helper/normalize';
+@import 'helper/vars';
+@import 'helper/mixins';
+@import 'helper/grid';
+
+.site
+{
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+    &__main
+    {
+        margin-top: 60px;
+    }
+    &--overflow-hidden
+    {
+        overflow: hidden;
+    }
+}
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/footer';
+@import 'blocks/demo';
