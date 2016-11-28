@@ -74,10 +74,10 @@ module.exports = function (grunt) {
                     files: {      
                         'build/main.js':
                             [
-                                "js/libs/jquery.min.js",
-                                "js/libs/jquery.isotope.min.js",
-                                "js/libs/jquery.inview.min.js",
-                                "js/libs/responsiveslides.min.js",
+                                "library/jquery.min.js",
+                                "library/jquery.isotope.min.js",
+                                "library/jquery.inview.min.js",
+                                "library/responsiveslides.min.js",
                                 "js/offcanvas.js",
                                 "js/swiper.js",
                                 "js/portofolio.js",
