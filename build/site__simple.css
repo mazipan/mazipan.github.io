@@ -369,6 +369,7 @@ textarea {
 .main__portofolio,
 .main__experience,
 .main__skills,
+.main__testimoni,
 .main__speakerat {
   *zoom: 1;
   margin: 0 auto;
@@ -378,11 +379,13 @@ textarea {
   .main__portofolio:before,
   .main__experience:before,
   .main__skills:before,
+  .main__testimoni:before,
   .main__speakerat:before,
   .main__about:after,
   .main__portofolio:after,
   .main__experience:after,
   .main__skills:after,
+  .main__testimoni:after,
   .main__speakerat:after {
     display: table;
     content: ' '; }
@@ -391,6 +394,7 @@ textarea {
   .main__portofolio:after,
   .main__experience:after,
   .main__skills:after,
+  .main__testimoni:after,
   .main__speakerat:after {
     clear: both; }
 
@@ -537,9 +541,14 @@ textarea {
   padding: 20px 0;
   background-color: #e9e9e9; }
 
-.main__speakerat {
+.main__testimoni {
   display: block;
   padding: 20px 0; }
+
+.main__speakerat {
+  display: block;
+  padding: 20px 0;
+  background-color: #e9e9e9; }
 
 .footer {
   margin: 0 auto;

@@ -77,7 +77,7 @@ module.exports = function (grunt) {
                                 "library/jquery.min.js",
                                 "library/jquery.isotope.min.js",
                                 "library/jquery.inview.min.js",
-                                "library/responsiveslides.min.js",
+                                "library/owl.carousel.min.js",
                                 "js/offcanvas.js",
                                 "js/swiper.js",
                                 "js/portofolio.js",

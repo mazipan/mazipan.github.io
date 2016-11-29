@@ -37,11 +37,19 @@
         padding: 20px 0;
         background-color: $greyLighter;
     }
+    &__testimoni
+    {
+        @extend %row;
+
+        display: block;
+        padding: 20px 0;
+    }
     &__speakerat
     {
         @extend %row;
 
         display: block;
         padding: 20px 0;
+        background-color: $greyLighter;
     }
 }

@@ -22,46 +22,18 @@
             background-color: #d3c6c6;
         }
     }
-    &__photo
-    {
-        margin-bottom: 20px;
-
-        img
-        {
-            @include border-radius(50%);
-
-            width: 150px;
-            height: 150px;
-            border: .5px solid $grey;
-        }
-    }
     &__content
     {
         margin: 0 auto;
         max-width: 600px;
         width: 90%;
-        text-align: center;
+        text-align: left;
     }
-    &__h2
+    &__h3
     {
         font-size: 1.3rem;
         margin: 0;
         font-weight: normal;
-        color: $greyDarker;
-        padding-bottom: 20px;
-
-        small{
-            color: $grey;
-            font-size: 70%;
-            display: block;
-        }
-    }
-    &__h3
-    {
-        font-size: 1.1rem;
-        margin: 0;
-        font-weight: normal;
-        font-style: italic;
         color: $grey;
     }
     &__quote
@@ -79,32 +51,4 @@
             vertical-align: bottom;
         }
     }
-
-    &__slide
-    {
-        position: relative;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        list-style: none;
-
-        li
-        {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: none;
-            width: 100%;
-            -webkit-backface-visibility: hidden;
-
-            &:first-child
-            {
-                position: relative;
-                display: block;
-                float: left;
-            }
-        }
-    }
-
 }

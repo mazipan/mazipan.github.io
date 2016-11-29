@@ -369,6 +369,7 @@ textarea {
 .main__portofolio,
 .main__experience,
 .main__skills,
+.main__testimoni,
 .main__speakerat,
 .skills__content {
   *zoom: 1;
@@ -379,12 +380,14 @@ textarea {
   .main__portofolio:before,
   .main__experience:before,
   .main__skills:before,
+  .main__testimoni:before,
   .main__speakerat:before,
   .skills__content:before,
   .main__about:after,
   .main__portofolio:after,
   .main__experience:after,
   .main__skills:after,
+  .main__testimoni:after,
   .main__speakerat:after,
   .skills__content:after {
     display: table;
@@ -394,6 +397,7 @@ textarea {
   .main__portofolio:after,
   .main__experience:after,
   .main__skills:after,
+  .main__testimoni:after,
   .main__speakerat:after,
   .skills__content:after {
     clear: both; }
@@ -590,9 +594,14 @@ textarea {
   padding: 20px 0;
   background-color: #e9e9e9; }
 
-.main__speakerat {
+.main__testimoni {
   display: block;
   padding: 20px 0; }
+
+.main__speakerat {
+  display: block;
+  padding: 20px 0;
+  background-color: #e9e9e9; }
 
 .swipper {
   position: relative; }
@@ -681,38 +690,16 @@ textarea {
     border-bottom: 1px solid rgba(255, 255, 255, 0.901961);
     background-color: #d3c6c6; }
 
-.about__photo {
-  margin-bottom: 20px; }
-  .about__photo img {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    border: 0.5px solid #B6B6B6; }
-
 .about__content {
   margin: 0 auto;
   max-width: 600px;
   width: 90%;
-  text-align: center; }
+  text-align: left; }
 
-.about__h2 {
+.about__h3 {
   font-size: 1.3rem;
   margin: 0;
   font-weight: normal;
-  color: #838383;
-  padding-bottom: 20px; }
-  .about__h2 small {
-    color: #B6B6B6;
-    font-size: 70%;
-    display: block; }
-
-.about__h3 {
-  font-size: 1.1rem;
-  margin: 0;
-  font-weight: normal;
-  font-style: italic;
   color: #B6B6B6; }
 
 .about__quote {
@@ -723,25 +710,6 @@ textarea {
     vertical-align: top; }
   .about__quote--right {
     vertical-align: bottom; }
-
-.about__slide {
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none; }
-  .about__slide li {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    width: 100%;
-    -webkit-backface-visibility: hidden; }
-    .about__slide li:first-child {
-      position: relative;
-      display: block;
-      float: left; }
 
 .portofolio__wrapper {
   text-align: center; }
@@ -964,6 +932,74 @@ textarea {
       text-align: center;
       font-size: 1rem;
       line-height: 1.3; }
+
+.testimoni__wrapper {
+  text-align: center;
+  padding: 0 1em; }
+
+.testimoni__title {
+  padding-bottom: 20px;
+  color: #838383;
+  font-size: 2.4rem;
+  line-height: 2;
+  font-family: 'Lobster', cursive; }
+  .testimoni__title-border {
+    display: block;
+    margin: 0 auto 30px;
+    width: 80px;
+    height: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.901961);
+    background-color: #d3c6c6; }
+
+.testimoni__content {
+  margin: 0 auto; }
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
+  margin: 20px 5px;
+  text-align: left; }
+  .card:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+  .card__header {
+    border-bottom: 1px solid #d0d0d0;
+    padding: 10px; }
+  .card__content {
+    padding: 10px;
+    color: #838383;
+    font-size: .9rem;
+    height: 250px;
+    overflow: auto; }
+  .card__photo {
+    display: inline-block;
+    width: 50px;
+    vertical-align: top; }
+    .card__photo img {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      border: 0.5px solid #B6B6B6; }
+  .card__title {
+    display: inline-block;
+    width: 200px;
+    font-size: 1rem;
+    padding-left: 5px;
+    color: #838383; }
+    .card__title small {
+      display: block; }
 
 .experience__wrapper {
   text-align: center; }
