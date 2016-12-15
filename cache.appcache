@@ -1,6 +1,10 @@
 CACHE MANIFEST
-# mazipan.github.io - 2017-12-15 19:30
+# mazipan.github.io - 2017-12-15 19:40
 # This part will be store in cache
+
+./favicon-96x96.png 
+./favicon-32x32.png 
+./favicon-16x16.png 
 
 ./images/brand.png
 ./images/full-blipulsa-data.jpg
@@ -45,6 +49,10 @@ CACHE MANIFEST
 ./build/dist/main.min.js
 ./build/dist/site.min.css
 ./build/dist/site__simple.min.css
+
+https://use.fontawesome.com/89344806bd.css
+https://use.fontawesome.com/releases/v4.6.3/css/font-awesome-css.min.css
+https://www.google-analytics.com/analytics.js
 
 NETWORK:
 # This part will be exclude from cache
