@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# mazipan.github.io - 2017-12-15 17:40
+# mazipan.github.io - 2017-12-15 18:40
 # This part will be store in cache
 
 ./images/brand.png
@@ -31,9 +31,20 @@ CACHE MANIFEST
 ./images/slide-2.JPG
 ./images/slide-3.jpg
 
+./library/jquery.inview.min.js
+./library/jquery.isotope.min.js
+./library/jquery.min.js
 ./library/owl.carousel.css
-./library/owl.transition.css
+./library/owl.carousel.min.js
 ./library/owl.theme.css
+./library/owl.transitions.css
+./library/prism.min.css
+./library/prism.min.js
+./library/responsiveslides.min.js
+
+./build/dist/main.min.js
+./build/dist/site.min.css
+./build/dist/site__simple.min.css
 
 NETWORK:
 # This part will be exclude from cache
