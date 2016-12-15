@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# mazipan.github.io - 2017-12-15 19:40
+# mazipan.github.io - 2017-12-15 19:45
 # This part will be store in cache
 
 ./favicon-96x96.png 
@@ -56,7 +56,7 @@ https://www.google-analytics.com/analytics.js
 
 NETWORK:
 # This part will be exclude from cache
-
+*
 https://www.google-analytics.com/*
 https://fonts.gstatic.com/*
 https://use.fontawesome.com/*
