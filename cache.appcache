@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# mazipan.github.io - 2017-12-15 13:40
+# This part will be store in cache
+
+./images/*
+./library/*
+
+NETWORK:
+# This part will be exclude from cache
