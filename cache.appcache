@@ -1,9 +1,39 @@
 CACHE MANIFEST
-# mazipan.github.io - 2017-12-15 13:40
+# mazipan.github.io - 2017-12-15 17:40
 # This part will be store in cache
 
-./images/*
-./library/*
+./images/brand.png
+./images/full-blipulsa-data.jpg
+./images/full-blipulsa.png
+./images/full-cms.jpg
+./images/full-incident.jpg
+./images/full-library-extjs.jpg
+./images/full-library-servlet.jpg
+./images/full-network.jpg
+./images/full-servo-availibility.jpg
+./images/full-servo.png
+./images/full-siaga.jpg
+./images/full-suggestion.jpg
+./images/full-tnmd.png
+./images/full-transport.jpg
+./images/full-webportal.png
+./images/irfan-maulana-recommendation-1.jpg
+./images/irfan-maulana-recommendation-2.jpg
+./images/irfan-maulana-recommendation-3.jpg
+./images/irfan-maulana-recommendation-4.jpg
+./images/irfan-maulana-recommendation-5.jpg
+./images/irfan-maulana-recommendation-6.jpg
+./images/irfan-maulana-recommendation-7.jpg
+./images/irfan-maulana.jpg
+./images/logo-bliblidotcom.png
+./images/logo-smltech.PNG
+./images/slide-1.JPG
+./images/slide-2.JPG
+./images/slide-3.jpg
+
+./library/owl.carousel.css
+./library/owl.transition.css
+./library/owl.theme.css
 
 NETWORK:
 # This part will be exclude from cache
