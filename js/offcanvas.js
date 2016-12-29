@@ -25,6 +25,17 @@ $(window).load(function(){
           $('.header__nav-btn').removeClass("header__nav-btn--close");
     }
 
+    function scrollToTarget(thiz){
+          var href = $(thiz).find('a').attr('href');
+          
+          $('html, body').animate({
+              scrollTop: $(href).offset().top
+          }, 1000);
+
+          var href = $(thiz).find('a').attr('href');
+          document.location.hash = href;
+    }
+
     // button humberger click or touch
     $("#menu-toggle").on(eventtypeclick, function(evt){
           if($('body').hasClass("site--overflow-hidden")){
@@ -35,8 +46,19 @@ $(window).load(function(){
     });
 
     // menu offcanvas click
-    $('.offcanvas li').on('click', function(evt){
+    $('.offcanvas li').on(eventtypeclick, function(evt){
+          var target = this;
+
+          scrollToTarget(target);
           hideOffCanvas();
+          return false;
+    });
+
+    $('.header__nav--desktop li').on('click', function(evt){
+          var target = this;
+          
+          scrollToTarget(target);
+          return false;
     });
 
     // overlay offcanvas click or touch

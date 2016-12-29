@@ -521,29 +521,24 @@ textarea {
   position: fixed;
   right: 0;
   z-index: 1001;
-  visibility: hidden;
   width: 100%;
-  height: 100%; }
-  .offcanvas--animated ul {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0); }
   .offcanvas--opened {
-    visibility: visible; }
-    .offcanvas--opened ul {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
     .offcanvas--opened .offcanvas__overlay {
       opacity: 1; }
   .offcanvas__overlay {
-    -webkit-transition: opacity 0.5s;
-    -moz-transition: opacity 0.5s;
-    -ms-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-    transition: opacity 0.5s;
     position: absolute;
-    width: 100%;
+    width: 40%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
     opacity: 0; }
   .offcanvas ul {
     -webkit-transition: all 0.5s;
@@ -560,11 +555,11 @@ textarea {
     list-style: none; }
     .offcanvas ul li {
       display: block;
-      padding: 20px 20px 0 30px; }
+      padding: 20px 0 0 1em; }
       .offcanvas ul li a {
         color: #fff;
         text-decoration: none;
-        font-size: 1.5rem; }
+        font-size: 1.2rem; }
 
 .main__swipper {
   *zoom: 1;
