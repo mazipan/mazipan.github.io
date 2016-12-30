@@ -1,10 +1,10 @@
 CACHE MANIFEST
-# mazipan.github.io - 2017-12-15 19:50
+# mazipan.github.io - 2017-01-16 19:50
 # This part will be store in cache
 
-./favicon-96x96.png 
-./favicon-32x32.png 
-./favicon-16x16.png 
+./favicon/favicon-96x96.png 
+./favicon/favicon-32x32.png 
+./favicon/favicon-16x16.png 
 
 ./images/brand.png
 ./images/full-blipulsa-data.jpg
