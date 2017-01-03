@@ -73,6 +73,8 @@ function precache() {
       './build/dist/main.min.js',
       './build/dist/site.min.css',
       './build/dist/site__simple.min.css',
+
+      'https://fonts.googleapis.com/css?family=Lobster',
       'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
       // 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map',
       // 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/FontAwesome.otf',
