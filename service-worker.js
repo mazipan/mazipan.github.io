@@ -18,7 +18,7 @@ self.addEventListener('fetch', function(evt) {
   evt.respondWith(fromCache(evt.request));
   // ...and `waitUntil()` to prevent the worker from being killed until the
   // cache is updated.
-  evt.waitUntil(update(evt.request));
+  // evt.waitUntil(update(evt.request));
 });
 
 // Open a cache and use `addAll()` with an array of assets to add all of them
