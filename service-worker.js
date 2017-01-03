@@ -15,7 +15,12 @@ self.addEventListener('fetch', function(evt) {
   console.log('The service worker is serving the asset.');
   // You can use `respondWith()` to answer immediately, without waiting for the
   // network response to reach the service worker...
-  evt.respondWith(fromCache(evt.request));
+
+  evt.respondWith(fromNetwork(evt.request, 400).catch(function () {
+    return fromCache(evt.request);
+  }));
+
+  // evt.respondWith(fromCache(evt.request));
   // ...and `waitUntil()` to prevent the worker from being killed until the
   // cache is updated.
   // evt.waitUntil(update(evt.request));
@@ -83,6 +88,21 @@ function precache() {
       // 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff',
       // 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2'
     ]);
+  });
+}
+
+// Time limited network request. If the network fails or the response is not
+// served before timeout, the promise is rejected.
+function fromNetwork(request, timeout) {
+  return new Promise(function (fulfill, reject) {
+    // Reject in case of timeout.
+    var timeoutId = setTimeout(reject, timeout);
+    // Fulfill in case of success.
+    fetch(request).then(function (response) {
+      clearTimeout(timeoutId);
+      fulfill(response);
+    // Reject also if network fetch rejects.
+    }, reject);
   });
 }
 
