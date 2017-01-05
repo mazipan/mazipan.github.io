@@ -89,6 +89,12 @@
                   </a>
               </li>
               <li>
+                  <a href="https://mazipan.github.io/om-telolet-om/" 
+                  onclick="_trackLink('demo om-telolet-om', 'demo', 'visit')">
+                    Om Telolet Om
+                  </a>
+              </li>
+              <li>
                   <a href="https://mazipan.github.io/ExtJS-NetworkDashboard/" 
                   onclick="_trackLink('demo ExtJS-NetworkDashboard', 'demo', 'visit')">
                     ExtJS-NetworkDashboard
@@ -114,9 +120,11 @@
             <ul>
               <li>
                   <a href="https://dl.dropboxusercontent.com/u/56771947/EbookSenchaExtJSGuideForBeginner.pdf" onclick="_trackLink('ebook sencha-guide', 'ebook', 'download')">Sencha ExtJS Guide for Beginner : Bahasa Indonesia</a>
+                  <a href="https://1drv.ms/b/s!AmRSReuiFW9PgRGKWzc-WLlqHDXa">link alternate</a>
               </li>
               <li>
                   <a href="https://dl.dropboxusercontent.com/u/56771947/ebook-mengembangkan-css-framework-sendiri.pdf" onclick="_trackLink('ebook css-framework', 'ebook', 'download')">Mengembangkan CSS Framework Sendiri : Bahasa Indonesia</a>
+                  <a href="https://1drv.ms/b/s!AmRSReuiFW9PgRC8S9NfbYnFNh9E">link alternate</a>
               </li>
             </ul>
           </div>
@@ -159,6 +167,9 @@
               </li>
               <li>
                   <a href="http://www.slideshare.net/IrfanMaulana21/bliblidotcom-reintroduction-bem-css" onclick="_trackLink('slide bem css', 'slide', 'visit')">Bliblidotcom - Reintroduction BEM CSS</a>
+              </li>
+              <li>
+                  <a href="http://www.slideshare.net/IrfanMaulana21/bliblidotcom-sass-introduction" onclick="_trackLink('slide sass', 'slide', 'visit')">Bliblidotcom - SASS Introduction</a>
               </li>
               <li>
                   <a href="http://www.slideshare.net/IrfanMaulana21/" onclick="_trackLink('slide other', 'slide', 'visit')">Check other slides here</a>
@@ -230,6 +241,12 @@
           eventLabel: linkClick
         });
       }    
+
+      $(window).load(function(){
+        try{
+          _trackLink('demo', 'demo', 'visit directly');
+        }catch(err){}
+      });
   </script>
   <script src="https://use.fontawesome.com/89344806bd.js"></script>
   
