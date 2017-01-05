@@ -240,13 +240,13 @@
           eventAction: action,
           eventLabel: linkClick
         });
-      }    
+      }
 
-      $(window).load(function(){
+      window.onload = function() {
         try{
-          _trackLink('demo', 'demo', 'visit directly');
+            _trackLink('demo', 'demo', 'visit directly');
         }catch(err){}
-      });
+      };
   </script>
   <script src="https://use.fontawesome.com/89344806bd.js"></script>
   
