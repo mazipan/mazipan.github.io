@@ -2,8 +2,6 @@ var CACHE = 'mazipan-cache';
 
 // On install, cache some resources.
 self.addEventListener('install', function(evt) {
-  console.log('The service worker is being installed.');
-
   // Ask the service worker to keep installing until the returning promise
   // resolves.
   evt.waitUntil(precache());
@@ -12,7 +10,6 @@ self.addEventListener('install', function(evt) {
 // On fetch, use cache but update the entry with the latest contents
 // from the server.
 self.addEventListener('fetch', function(evt) {
-  console.log('The service worker is serving the asset.');
   // You can use `respondWith()` to answer immediately, without waiting for the
   // network response to reach the service worker...
 
@@ -106,7 +103,8 @@ function fromNetwork(request, timeout) {
 function fromCache(request) {
   return caches.open(CACHE).then(function (cache) {
     return cache.match(request).then(function (matching) {
-      return matching;
+      console.log("matching cache : ", matching);
+      return matching || fromNetwork(request, 300);
     });
   });
 }
