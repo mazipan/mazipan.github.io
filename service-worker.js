@@ -13,9 +13,12 @@ self.addEventListener('fetch', function(evt) {
   // You can use `respondWith()` to answer immediately, without waiting for the
   // network response to reach the service worker...
 
-  evt.respondWith(fromNetwork(evt.request, 400).catch(function () {
-    return fromCache(evt.request);
-  }));
+  evt.respondWith(
+    fromNetwork(evt.request, 400)
+    .catch(function () {
+      return fromCache(evt.request);
+    })
+  );
 
   // evt.respondWith(fromCache(evt.request));
   // ...and `waitUntil()` to prevent the worker from being killed until the
@@ -103,10 +106,8 @@ function fromNetwork(request, timeout) {
 function fromCache(request) {
   return caches.open(CACHE).then(function (cache) {
     return cache.match(request).then(function (matching) {
-      console.log("matching cache : ", matching);
-      
-      if(matching) return matching;
-      else fromNetwork(request, 300);
+      return matching || Promise.reject('no-match');;
+      //else fromNetwork(request, 300);
     });
   });
 }
