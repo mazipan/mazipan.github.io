@@ -75,6 +75,9 @@ function precache() {
       './build/dist/main.min.js',
       './build/dist/site.min.css',
       './build/dist/site__simple.min.css',
+
+      'https://mazipan.github.io/bem-kit/dist/bem-kit.min.css',
+      'https://mazipan.github.io/lightweight-admin-template/dist/lightweight-admin-template.min.css'
     ]);
   });
 }
@@ -101,7 +104,9 @@ function fromCache(request) {
   return caches.open(CACHE).then(function (cache) {
     return cache.match(request).then(function (matching) {
       console.log("matching cache : ", matching);
-      return matching || fromNetwork(request, 300);
+      
+      if(matching) return matching;
+      else fromNetwork(request, 300);
     });
   });
 }
