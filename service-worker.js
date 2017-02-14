@@ -1,5 +1,4 @@
 var CACHE = 'mazipan-cache';
-
 // On install, cache some resources.
 self.addEventListener('install', function(evt) {
   // Ask the service worker to keep installing until the returning promise
