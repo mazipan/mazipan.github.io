@@ -1,3 +1,4 @@
+/*
 function loaderScript(src){
     var scripts = document.createElement('script');
 	scripts.setAttribute("type","text/javascript");
@@ -15,3 +16,4 @@ loaderScript('//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
 google_ad_client: "ca-pub-5442972248172818",
 enable_page_level_ads: true
 });
+*/
