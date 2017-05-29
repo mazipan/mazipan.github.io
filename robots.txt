@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://mazipan.github.io/sitemap.xml
