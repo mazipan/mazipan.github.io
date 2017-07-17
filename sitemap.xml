@@ -2,71 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://mazipan.github.io/</loc>
-        <lastmod>2015-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/demo/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/bem-kit/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/lightweight-admin-template/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/journey-to-the-frontend-world/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/om-telolet-om/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/ExtJS-NetworkDashboard/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>http://mazipan.github.io/ExtJS-TNMD/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>http://mazipan.github.io/ng2-starwars/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>http://mazipan.github.io/ng2-simplert/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/vue2-simplert/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/angularjs-basic-tutorial/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/blibli-amp-concept/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/awesome-bemcss/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/explore-github/</loc>
-        <lastmod>2017-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/explore-github/</loc>
-        <lastmod>2015-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
-
     <url>
         <loc>https://mazipan.github.io/css-style-guide/</loc>
-        <lastmod>2015-04-19T00:00:00.000Z</lastmod>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mazipan.github.io/chucknorris/</loc>
+        <lastmod>2017-07-17T00:00:00.000Z</lastmod>
     </url>
 </urlset>
