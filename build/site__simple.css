@@ -406,6 +406,14 @@ textarea {
     margin-top: 60px; }
   .site--overflow-hidden {
     overflow: hidden; }
+  .site h2, .site h3 {
+    padding-bottom: 20px;
+    color: #838383;
+    line-height: 2; }
+  .site h2 {
+    font-size: 1.4rem; }
+  .site h3 {
+    font-size: 1.6rem; }
 
 .header {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
@@ -420,7 +428,13 @@ textarea {
   .header__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    *zoom: 1; }
+    .header__wrapper:before, .header__wrapper:after {
+      display: table;
+      content: ' '; }
+    .header__wrapper:after {
+      clear: both; }
   .header__brand {
     display: flex;
     justify-content: space-between;

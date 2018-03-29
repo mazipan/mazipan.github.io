@@ -18,6 +18,18 @@
     {
         overflow: hidden;
     }
+
+    h2, h3{
+      padding-bottom: 20px;
+      color: #838383;
+      line-height: 2;
+    }
+    h2{
+      font-size: 1.4rem;
+    }
+    h3{
+      font-size: 1.6rem;
+    }
 }
 
 @import 'blocks/header';

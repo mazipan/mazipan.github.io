@@ -424,7 +424,13 @@ textarea {
   .header__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    *zoom: 1; }
+    .header__wrapper:before, .header__wrapper:after {
+      display: table;
+      content: ' '; }
+    .header__wrapper:after {
+      clear: both; }
   .header__brand {
     display: flex;
     justify-content: space-between;
