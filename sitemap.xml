@@ -37,10 +37,6 @@
         <lastmod>2017-10-22T00:00:00.000Z</lastmod>
     </url>
     <url>
-        <loc>http://mazipan.github.io/ng2-simplert/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
-    </url>
-    <url>
         <loc>https://mazipan.github.io/vue2-simplert/</loc>
         <lastmod>2017-10-22T00:00:00.000Z</lastmod>
     </url>
@@ -97,10 +93,6 @@
         <lastmod>2017-10-22T00:00:00.000Z</lastmod>
     </url>
     <url>
-        <loc>https://mazipan.github.io/react-simplert/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
-    </url>
-    <url>
         <loc>https://mazipan.github.io/awesome-vue-list/</loc>
         <lastmod>2017-10-22T00:00:00.000Z</lastmod>
     </url>
@@ -111,5 +103,17 @@
     <url>
         <loc>https://mazipan.github.io/project-catalog/</loc>
         <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mazipan.github.io/login-page-css/</loc>
+        <lastmod>2020-05-27T00:00:00.000Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mazipan.github.io/login-page-css/01-shopify/index.html</loc>
+        <lastmod>2020-05-27T00:00:00.000Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mazipan.github.io/login-page-css/02-bukalapak/index.html</loc>
+        <lastmod>2020-05-27T00:00:00.000Z</lastmod>
     </url>
 </urlset>
