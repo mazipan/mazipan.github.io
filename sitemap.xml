@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://mazipan.github.io/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/demo/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/bem-kit/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/lightweight-admin-template/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/journey-to-the-frontend-world/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/om-telolet-om/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000ZZ</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/ExtJS-NetworkDashboard/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>http://mazipan.github.io/ExtJS-TNMD/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>http://mazipan.github.io/ng2-starwars/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/vue2-simplert/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/angularjs-basic-tutorial/</loc>
@@ -66,19 +66,19 @@
     </url>
     <url>
         <loc>https://mazipan.github.io/vue-currency-filter/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/vue-select-image/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/vue-ionicons/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/bulma-admin-dashboard-template/</loc>
-        <lastmod>2017-10-22T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/phpid-uxd-landingpage-prototype/</loc>
@@ -106,15 +106,27 @@
     </url>
     <url>
         <loc>https://mazipan.github.io/login-page-css/</loc>
-        <lastmod>2020-05-27T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/login-page-css/01-shopify/index.html</loc>
-        <lastmod>2020-05-27T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/login-page-css/02-bukalapak/index.html</loc>
-        <lastmod>2020-05-27T00:00:00.000Z</lastmod>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mazipan.github.io/login-page-css/03-google/index.html</loc>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mazipan.github.io/login-page-css/04-kitabisa/index.html</loc>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mazipan.github.io/login-page-css/05-mailchimp/index.html</loc>
+        <lastmod>2020-05-29T00:00:00.000Z</lastmod>
     </url>
     <url>
         <loc>https://mazipan.github.io/vue-tiny-lazyload-img/</loc>
